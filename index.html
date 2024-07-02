@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- logo -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/character/nutz_logo.png"> 
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- title site -->
+    <title>NUTZ</title>
+</head>
+<body>
+
+    <div class="w-full  relative max-w-[100%] h-auto overflow-hidden flex flex-col items-center">
+
+        <!-- navbar -->
+         <nav class="flex absolute z-[9999] top-[2rem] justify-between items-center w-full h-[80px] px-[1rem] md:px-[2rem]">
+
+            <!-- logo -->
+            <div class="logo relative flex justify-center items-center">
+                <img src="./assets/images/logo_nav.png" alt="" class="object-contain h-auto w-[80px]">
+            </div>
+
+            <!-- links container-->
+            <div class="links duration-200 bg-[#22B1C2] lg:bg-transparent min-[768px]:w-[50%] w-full lg:w-auto max-[1023px]:top-[110%] max-[1023px]:py-[2rem] right-0 min-[768px]:right-[10%] lg:right-auto absolute z-10  min-[1023px]:relative  flex justify-center flex-col lg:flex-row items-center gap-[2rem]"> 
+
+                <!-- links -->
+                <ul class="flex flex-col lg:flex-row items-center w-full lg:w-auto gap-[1.5rem] lg:gap-[1rem] uppercase text-white text-[.9rem] lg:text-[1.1rem] min-[1800px]:text-[1.3rem]">
+                    <li><a href="#homes" class="medium_stroke">home</a></li>
+                    <li><a href="#About" class="medium_stroke">about</a></li>
+                    <li><a href="#Tokenomics" class="medium_stroke">tokenomics</a></li> 
+                    <li><a href="#Nutzmap" class="medium_stroke">Nutzmap</a></li>
+                    <li><a href="#Gallery" class="medium_stroke">gallery</a></li>
+                    <li><a href="#Partnership" class="medium_stroke">partnership</a></li>
+                    <li><a href="#Contacts" class="medium_stroke">contacts</a></li>
+                </ul>
+
+                 <!-- social mobile-->
+                <div class="accessibility md:hidden flex justify-center items-center gap-[1rem] relative">
+                <a href="#twitter" class="duration-150 hover:scale-110">
+                    <img src="./assets/images/twitter_nav.svg" alt="twitter" class="w-[50px] h-auto object-contain">
+                </a>
+                <a href="#telegram" class="duration-150 hover:scale-110">
+                    <img src="./assets/images/tele_nav.svg" alt="twitter" class="w-[50px] h-auto object-contain">
+                </a>
+                <div class="duration-150 hover:scale-110">
+                    <img src="./assets/images/buy_nav.svg" alt="twitter" class="w-[150px] h-auto object-contain">
+                </div>
+                </div>
+
+            </div>
+
+            <!-- social -->
+            <div class="accessibility hidden md:flex justify-center items-center gap-[1rem] relative">
+                <a href="#twitter" class="duration-150 hover:scale-110">
+                    <img src="./assets/images/twitter_nav.svg" alt="twitter" class="w-[50px] h-auto object-contain">
+                </a>
+                <a href="#telegram" class="duration-150 hover:scale-110">
+                    <img src="./assets/images/tele_nav.svg" alt="twitter" class="w-[50px] h-auto object-contain">
+                </a>
+                <div class="duration-150 hover:scale-110">
+                    <img src="./assets/images/buy_nav.svg" alt="twitter" class="w-[150px] h-auto object-contain">
+                </div>
+            </div>
+
+            <!-- menu btn -->
+            <div class="menu menu-button lg:hidden h-[54px] w-[60px] z-[999] relative duration-300 ease-in-out flex justify-center items-center flex-col gap-[.25rem] rounded-[15px]"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+         </nav>
+
+         <!-- hero home -->
+          <section id="homes" class="hero h-auto w-full relative">
+            
+            <!-- bg -->
+            <img src="./assets/images/background/background_hero.svg" alt="" class="object-cover h-[1000px]  xl:h-auto w-full relative z-0  ">
+
+            <!-- character -->
+            <div class="absolute w-full h-full z-[1] top-0 left-0">
+
+                <!-- ban -->
+                <img src="./assets/images/character/purple_ban.png" alt="" class="object-contain absolute h-auto w-[40vw] md:w-[305px] min-[1500px]:w-[20vw] left-0 lg:left-[12%] bottom-[19%] xl:bottom-[7%]">
+
+                <!-- pepe help -->
+                <img src="./assets/images/character/pepe-half.png" alt="" class="object-contain absolute h-auto w-[20vw] xl:w-[118px] min-[1500px]:w-[10vw] right-[25%] top-[55%] md:top-[550px] xl:top-[23vw]">
+
+                <!-- nutz -->
+                <img src="./assets/images/character/hero_nutz.png" alt="" class="object-contain absolute h-auto w-[30vw] xl:w-[148px] min-[1500px]:w-[12vw] right-[0] top-[85%] min-[600px]:top-[600px] xl:top-[24vw]">
+
+            </div>
+
+            <!-- content -->
+             <div class="content absolute left-0 top-0 z-10 w-full h-full flex justify-center items-center">
+
+                <!-- contract -->
+                 <div class="contract absolute md:left-[5%] top-[15%] md:top-[20%] flex flex-col gap-[1.25rem]">
+                    <h2 class="text-[24px]  min-[1800px]:text-[28px] medium_stroke">BSC20 Contract</h2>
+                    <div class="flex items-center gap-[1rem]">
+                        <h3 class="text-[20px] min-[1800px]:text-[23px] medium_stroke">0x55...14e69</h3>
+                        <img src="./assets/images/copy_icon.png" alt="" class="object-contain h-auto w-[30px]  min-[1800px]:w-[40px] cursor-pointer">
+                    </div>
+                 </div>
+
+                 <!-- title -->
+                  <div class="title flex justify-between items-center flex-col gap-[1rem] absolute top-[25%] max-w-[90%]">
+                    <img src="./assets/images/hero_title.png" alt="" class="object-contain h-auto w-[400px]">
+                    <h2 class="medium_stroke w-[90%] md:w-[450px] text-center text-[20px]  min-[1800px]:text-[24px]">HI, IM NUTZ PAD, THE CUTEST NUTS ON 
+                        THE CRYPTO SPACE.</h2>
+                  </div>
+
+                <!-- progress container -->
+                <div class="progress flex justify-between items-center md:items-end flex-col gap-[1rem] absolute bottom-[10%] md:bottom-[20%] md:right-[10%] "> 
+
+                    <!-- buy btn -->
+                    <button class="hero__btn w-[248px] h-[53px] relative bg-white border-[2px] border-black rounded-full flex justify-between items-center px-[.25rem] ">
+
+                        <!-- sol input -->
+                        <div class="input_container flex items-center text-black ml-[1rem]">
+                            <input id="numberInput"  class="auto-width-input w-auto border-none outline-none inline-block" type="text"  value="0"> 
+                            <p class="suffix-text" id="suffixText">SOL</p>
+                        </div>
+
+                        <!-- buy btn -->
+                        <div class="buy_btn relative flex justify-center items-center border-black border-[2px] rounded-full w-[93px] h-[43px] bg-[#FFC374] medium_stroke duration-200 hover:scale-105">
+                            <p class="text-[22px] font-bold">BUY</p>  
+                        </div>
+
+                    </button>
+
+                    <!-- progress -->
+                     <div class="relative flex flex-col items-center h-auto w-[370px] min-[1800px]:w-[440px] max-w-[95vw] text-black ">
+                        <div class="flex items-center justify-between w-full text-[14px]">
+                            <p>min buy 0.1 bnb</p>
+                            <p>max buy 200 bnb</p>
+                        </div>
+                        <div class="w-full h-auto flex justify-center items-center">
+                            <img src="./assets/images/progress_bg.svg" alt="" class="object-contain h-auto w-full relative">
+
+                            <p class="absolute z-[1] uppercase text-[16px]">presale progress</p>
+                            <p class="absolute right-[10%] z-[1] uppercase text-[12px]">$0.00</p>
+                        </div>
+
+                     </div>
+
+                </div>
+
+             </div>
+
+
+          </section>
+
+          <!-- about -->
+          <section class="hero h-auto w-full relative">
+             
+            <!-- <dotlottie-player src="https://lottie.host/abc14d80-86e1-479e-a964-de74462ea16c/dwEOVLfpLK.json" background="transparent" class="bottom_illustration_pepe w-full h-auto ff_cnas" speed="1"   loop autoplay></dotlottie-player> -->
+
+          </section>
+
+    </div>
+
+
+    <!-- script -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+     <script src="./assets/js/index.js"></script>
+</body>
+</html>
