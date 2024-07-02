@@ -17,6 +17,33 @@ links.addEventListener('click', (e) => {
 })
 
 
+// copy address
+// Pilih elemen yang sesuai
+const btn = document.querySelector('.copy_btn'); // Ganti #btn dengan selektor yang benar
+const text = document.querySelector('.contract_address'); // Ganti #text dengan selektor yang benar
+
+// Simpan teks asli dari tombol
+const contractText = text.innerText;
+let timeout;
+
+// Fungsi untuk menangani klik tombol
+btn.addEventListener('click', function () {
+    // Salin teks ke clipboard
+    navigator.clipboard.writeText(text.innerText).then(function() {
+        // Ubah teks tombol menjadi 'Copied'
+        text.innerText = 'Copied';
+
+        // Atur timeout untuk mengembalikan teks asli setelah 3 detik
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            text.innerText = contractText;
+        },1000);
+    }).catch(function(err) {
+        console.error('Gagal menyalin teks ke clipboard: ', err);
+    });
+});
+
+
 
 
 
