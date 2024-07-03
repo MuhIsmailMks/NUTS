@@ -19,7 +19,7 @@
     <div data-scroll-container class="w-full  relative max-w-[100%] h-auto overflow-hidden flex flex-col items-center bg-[#FFE6C7]">
 
         <!-- navbar -->
-         <nav  data-scroll-section class="flex absolute z-[6] top-[1.5rem] md:top-[2rem] justify-between items-center w-full h-[80px] px-[1rem] md:px-[2rem]">
+         <nav   class="flex absolute z-[6] top-[1.5rem] md:top-[2rem] justify-between items-center w-full h-[80px] px-[1rem] md:px-[2rem]">
 
             <!-- logo -->
             <div class="logo relative flex justify-center items-center">
@@ -78,7 +78,7 @@
          </nav>
 
          <!-- hero home -->
-          <section data-scroll-section id="homes" class="hero h-auto w-full relative z-0">
+          <section  id="homes" class="hero h-auto w-full relative z-0">
 
              <!-- bg -->
              <img src="./assets/images/background/background_hero.svg" alt="" class="object-cover h-[1000px]  xl:h-auto w-full relative z-0  ">
@@ -110,10 +110,25 @@
                   </div>
  
                   <!-- title -->
-                   <div class="title flex justify-between items-center flex-col gap-[-2rem] absolute top-[25%] max-w-[90%]">
+                   <div class="title flex justify-between items-center flex-col gap-[-2rem] absolute top-[25%] max-w-[90%] max-[1023px]:pt-[3rem]">
                      
                      <!-- images nutz -->
-                      <div class="flex relative w-full justify-center gap-[-1rem] items-center">
+                      <div class="flex relative w-full justify-center gap-[-1rem] items-center ">
+
+                        <!-- bag -->
+                        <div class=" absolute right-[31%] lg:right-[23%] top-[-65%] flex justify-center items-center z-[99] floating_animation" style="animation-delay: -7s;">
+                            <img
+                                class="decor__back w-[20vw] lg:w-[190px] h-auto object-contain relative"
+                                src="./assets/images/hero-title-decor.png"
+                                alt=""
+                            />
+                            <img
+                            class=" absolute w-[10vw] lg:w-[100px] h-auto object-contain"
+                            src="./assets/images/money-bag.svg"
+                            alt=""
+                        />
+                        </div>
+                        <!-- title -->
                          <img src="./assets/images/character/Nutz_n.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation ">
                          <img src="./assets/images/character/Nutz_u.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -1s;">
                          <img src="./assets/images/character/Nutz_t.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -4s;">
@@ -122,6 +137,7 @@
                          <img src="./assets/images/character/Nutz_a.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -3s;">
                          <img src="./assets/images/character/Nutz_d.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -2s;">
                       </div>
+
                      <!-- about title -->
                      <h2 class="medium_stroke w-[90%] md:w-[450px] text-center text-[20px]  min-[1800px]:text-[24px]">HI, IM NUTZ PAD, THE CUTEST NUTS ON 
                          THE CRYPTO SPACE.</h2>
@@ -171,7 +187,7 @@
 
 
           <!-- about -->
-          <section data-scroll-section id="About" class="hero  h-[700px] xl:h-[50vw] w-full relative flex flex-col items-center lg:items-start  ">
+          <section  id="About" class="hero  h-[700px] xl:h-[50vw] w-full relative flex flex-col items-center lg:items-start  ">
              
             <div data-scroll-offset="-100" data-scroll-sticky class="w-full h-full relative flex flex-col items-center lg:items-start py-[3rem] pt-[20vw] md:pt-[3rem] xl:pt-[6vw]"  >
                 
@@ -211,7 +227,7 @@
 
 
           <!-- tokenomics -->
-          <section data-scroll-section id="Tokenomics" class="tokenomics h-auto w-full relative bg-[#508955] py-[3rem] ">
+          <section  id="Tokenomics" class="tokenomics h-auto w-full relative bg-[#508955] py-[3rem] ">
               
             <!-- slider -->
              <div class="slide_text_container w-full h-auto relative">
@@ -526,7 +542,7 @@
 
 
             <!-- dex -->
-            <section data-scroll-section class="dex h-auto w-full relative bg-[#FFC73F] py-[3rem] ">
+            <section  class="dex h-auto w-full relative bg-[#FFC73F] py-[3rem] ">
               
                 <!-- title -->
                  <h1 class="dex_title text-center text-white extra_bold_stroke text-[9vw] xl:text-[5vw]">GET $NUTZ on dex</h1>
