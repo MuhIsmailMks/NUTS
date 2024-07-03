@@ -218,8 +218,7 @@ li:hover a{
 
 
  
-/* animation */
- 
+/* animation */ 
 .marquee{
     animation: marquee 12s linear infinite;
     -webkit-animation: marquee 12s linear infinite;
@@ -347,3 +346,36 @@ li:hover a{
         -o-transform: translateY(6%);
     }
 }
+
+
+
+.side_animation{
+    animation: side 7s ease-in-out infinite;
+  }
+  /* side */
+  @keyframes side {
+    0% {
+      transform: translateX(0%);
+    }
+    50% { 
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+
+.to_right_animation{
+    animation: to_right 3s ease-in-out infinite;
+  } 
+
+  @keyframes to_right {
+    0% {
+      transform: translateX(0%);
+    } 
+    100% {
+      transform: translateX(110%);
+    }
+}
+
