@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- logo -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/character/nutz_logo.png">
-  <!-- CSS Locomotive Scroll -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css"> 
-    <!-- tailwind css -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- gsap --> 
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script> -->
+    
+  <!-- tailwind css -->  
+  <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- title site -->
     <title>NUTZ</title>
+
 </head>
 <body>
 
-    <div data-scroll-container class="w-full  relative max-w-[100%] h-auto overflow-hidden flex flex-col items-center bg-[#FFE6C7]">
+    <div class="container_website w-full  relative max-w-[100%] h-auto overflow-hidden flex flex-col items-center bg-[#FFE6C7]">
 
         <!-- navbar -->
-         <nav   class="flex absolute z-[6] top-[1.5rem] md:top-[2rem] justify-between items-center w-full h-[80px] px-[1rem] md:px-[2rem]">
+         <nav  class="flex absolute z-[6] top-[1.5rem] md:top-[2rem] justify-between items-center w-full h-[80px] px-[1rem] md:px-[2rem]">
 
             <!-- logo -->
             <div class="logo relative flex justify-center items-center">
@@ -78,7 +83,7 @@
          </nav>
 
          <!-- hero home -->
-          <section  id="homes" class="hero h-auto w-full relative z-0">
+          <section  id="homes" class="hero_parallax hero h-auto w-full relative z-0">
 
              <!-- bg -->
              <img src="./assets/images/background/background_hero.svg" alt="" class="object-cover h-[1000px]  xl:h-auto w-full relative z-0  ">
@@ -187,9 +192,9 @@
 
 
           <!-- about -->
-          <section  id="About" class="hero  h-[700px] xl:h-[50vw] w-full relative flex flex-col items-center lg:items-start  ">
+          <section  id="About" class="about_parallax  h-[700px] xl:h-[50vw] w-full relative flex flex-col items-center lg:items-start  ">
              
-            <div data-scroll-offset="-100" data-scroll-sticky class="w-full h-full relative flex flex-col items-center lg:items-start py-[3rem] pt-[20vw] md:pt-[3rem] xl:pt-[6vw]"  >
+            <div   class="w-full h-full relative flex flex-col items-center lg:items-start py-[3rem] pt-[20vw] md:pt-[3rem] xl:pt-[6vw]"  >
                 
             <!-- bg -->
              <img src="./assets/images/background/about_background.png" alt="" class="object-cover h-full lg:h-auto w-full absolute bottom-0"  >
@@ -611,13 +616,14 @@
 
     </div>
 
+ 
 
-    <!-- locomotive parallax -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script>
     <!-- lottie -->
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-    
+     
     <!-- script -->
      <script src="./assets/js/index.js"></script>
 </body>

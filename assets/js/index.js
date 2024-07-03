@@ -1,9 +1,23 @@
-// locomotive init
-document.addEventListener("DOMContentLoaded", function() {
-    const scroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true
-    }); 
+// document.addEventListener("DOMContentLoaded", () => {
+//     ScrollSmoother.create({
+//         wrapper: ".container_website", // Pembungkus untuk konten smooth scroll
+//         content: "section", // Konten yang akan di-scroll secara halus
+//         smooth: 1.5, // Kecepatan smoothing (1 adalah default, lebih tinggi lebih halus)
+//         effects: true // Jika Anda ingin menggabungkan dengan ScrollTrigger efek
+//     });
+// });
+
+
+// gsap scroll animation
+gsap.to(".hero_parallax", {
+    yPercent: 50,
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".hero_parallax",
+        start: "top top", 
+        end: "bottom top", 
+        scrub: true 
+    }
 });
 
 // nav handler
@@ -13,7 +27,7 @@ const links = document.querySelector('nav .links');
 menu_btn.addEventListener('click', () => {
     menu_btn.classList.toggle('active')
     links.classList.toggle('active') 
-})
+}) 
  
 links.addEventListener('click', (e) => { 
   if (e.target.tagName === 'A') { 
@@ -108,32 +122,25 @@ adjustInputWidth();
  
 
 function validateAndAdjust() {
-    let value = input.value;
-
-    // Izinkan hanya angka dan titik desimal
+    let value = input.value; 
     value = value.replace(/[^0-9.]/g, '');
-
-    // Jika titik berada di awal, tambahkan 0 di depannya
+ 
     if (value.startsWith('.')) {
         value = '0' + value;
     }
-
-    // Jika lebih dari satu titik desimal, hapus yang ekstra
+ 
     const parts = value.split('.');
     if (parts.length > 2) {
         value = parts[0] + '.' + parts.slice(1).join('');
     }
  
-
-    // Batasi hanya satu digit setelah titik desimal
+ 
     if (parts.length > 1 && parts[1].length > 1) {
-        parts[1] = parts[1].charAt(0); // Hanya ambil digit pertama setelah titik desimal
+        parts[1] = parts[1].charAt(0);  
         value = parts.join('.');
     }
-
-      // Batasi nol di awal menjadi maksimal dua
-      if (value.startsWith('0')) {
-        // Jika titik desimal diikuti oleh lebih dari dua nol
+ 
+      if (value.startsWith('0')) { 
         value = value.replace(/^0+/, '0');
     }
 
@@ -142,19 +149,15 @@ function validateAndAdjust() {
         value = '0.' + value.charAt(1);
     }
     
-
-    // Jika ada titik di akhir, biarkan pengguna mengedit lebih lanjut
+ 
     if (value.endsWith('.')) {
         input.value = value;
         return;
-    }
-
-    // Mencegah input "0.0" atau "00.0"
+    } 
     if (value === '0.0') {
         value = '0.1';
     }
-
-    // Konversi ke angka dan batasi maksimum
+ 
     const numericValue = parseFloat(value);
     if (numericValue > 200) {
         value = '200';
@@ -164,3 +167,4 @@ function validateAndAdjust() {
 }
 
 input.addEventListener('input', validateAndAdjust);
+ 
