@@ -278,3 +278,26 @@ li:hover a{
   }
   
 
+
+
+  .floating_animation{
+    animation: floating_animation 6s linear infinite;
+    -webkit-animation: floating_animation 6s linear infinite;
+}
+
+@keyframes floating_animation {
+    0%.100%{
+        transform: translateY(-6%);
+        -webkit-transform: translateY(-6%);
+        -moz-transform: translateY(-6%);
+        -ms-transform: translateY(-6%);
+        -o-transform: translateY(-6%);
+    }
+    50%{ 
+        transform: translateY(6%);
+        -webkit-transform: translateY(6%);
+        -moz-transform: translateY(6%);
+        -ms-transform: translateY(6%);
+        -o-transform: translateY(6%);
+    }
+}

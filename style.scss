@@ -42,24 +42,24 @@ li:hover a{
     -o-transform: translateX(100%);
 }
 
-.ff_cnas{
-    animation: ff_cnas 2s linear infinite;
-    -webkit-animation: ff_cnas 2s linear infinite;
+.floating_animation{
+    animation: floating_animation 2s linear infinite;
+    -webkit-animation: floating_animation 2s linear infinite;
 }
 
-@keyframes ff_cnas {
+@keyframes floating_animation {
     0%{
-        transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-        -o-transform: translateX(0%);
+        transform: translateY(4%);
+        -webkit-transform: translateY(4%);
+        -moz-transform: translateY(4%);
+        -ms-transform: translateY(4%);
+        -o-transform: translateY(4%);
     }
-    100%{
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -o-transform: translateX(100%);
-}
+    100%{ 
+        transform: translateY(4%);
+        -webkit-transform: translateY(4%);
+        -moz-transform: translateY(4%);
+        -ms-transform: translateY(4%);
+        -o-transform: translateY(4%);
+    }
 }
