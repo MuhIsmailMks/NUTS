@@ -18,15 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
        e.preventDefault();
        const target = document.querySelector(this.getAttribute('data-scroll-to'));
 
-    //    scroll.scrollTo(target, {
-    //      offset: getOffset(), 
-    //    });
+       scroll.scrollTo(target, {
+         offset: getOffset(), 
+       });
      });
    });
  
-//    window.addEventListener('resize', () => {
-//      scroll.update(); 
-//    });
+   window.addEventListener('resize', () => {
+     scroll.update(); 
+   });
 
 });
 
