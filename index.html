@@ -99,11 +99,11 @@
              <div class="content absolute left-0 top-0 z-10 w-full h-full flex justify-center items-center">
 
                 <!-- contract -->
-                 <div class="contract absolute md:left-[5%] top-[15%] md:top-[20%] flex flex-col max-[768px]:items-center gap-[.5rem] md:gap-[1.25rem]">
+                 <div class="contract absolute md:left-[5%] top-[15%] md:top-[20%] flex flex-col max-[768px]:items-center gap-[.5rem] md:gap-[1.25rem] copy_btns">
                     <h2 class="text-[24px]  min-[1800px]:text-[28px] medium_stroke">BSC20 Contract</h2>
                     <div class="flex items-center gap-[1rem]">
                         <h3 class="text-[20px] min-[1800px]:text-[23px] medium_stroke contract_address">0x55...14e69</h3>
-                        <img src="./assets/images/copy_icon.png" alt="" class="object-contain h-auto w-[30px]  min-[1800px]:w-[40px] cursor-pointer copy_btn">
+                        <img src="./assets/images/copy_icon.png" alt="" class="object-contain h-auto w-[30px]  min-[1800px]:w-[40px] cursor-pointer copy_btn ">
                     </div>
                  </div>
 
@@ -274,12 +274,12 @@
                     <img src="./assets/images/browser_title.png" alt="" class="object-contain h-[30px] md:h-[40px] xl:h-[50px] w-auto">
 
                     <!-- contract desktop -->
-                     <div class=" w-[60%] hidden xl:w-[740px] h-[52px] bg-white rounded-[20px] px-[.65rem] md:flex justify-between items-center">
+                     <div class=" w-[60%] hidden xl:w-[740px] h-[52px] bg-white rounded-[20px] px-[.65rem] md:flex justify-between items-center copy_btns">
 
-                        <p class="text-black text-[10px] md:text-[15px] pl-[.5rem]">CONTRACT : 0X0000000....DEAD</p>
+                        <p class="text-black text-[10px] md:text-[15px] pl-[.5rem] contract_address">CONTRACT : 0X0000000....DEAD</p>
 
                        
-                        <div class="relative cursor-pointer duration-150 hover:scale-105">
+                        <div class="relative cursor-pointer duration-150 hover:scale-105 copy_btn">
                             <span class="w-full h-full absolute z-10 left-0 top-0"></span>
                             <img src="./assets/images/token_address.svg" alt="" class="object-contain h--[95%] w-auto">
                         </div>
@@ -338,15 +338,28 @@
                          </div>
 
                          <!-- images -->
-                          <div class="flex flex-wrap justify-between gap-[.95rem] overflow-hidden h-auto xl:h-[470px] ">
-                            <img src="./assets/images/character/browser1.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
-                            <img src="./assets/images/character/browser2.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
+                          <div class="flex flex-wrap justify-between gap-[.95rem] overflow-hidden h-auto xl:h-[470px] relative ">
 
-                            <img src="./assets/images/character/browser3.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
-                            <img src="./assets/images/character/browser4.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
+                            <div class="relative duration-100 news_image w-[47.3%] h-auto cursor-pointer">
+                                <img src="./assets/images/character/browser1.png" alt="" class="object-cover  h-auto xl:h-[150px] w-[100%] relative rounded-[1rem] ">
+                            </div>
+                            <div class="relative duration-100 news_image w-[47.3%] h-auto cursor-pointer">
+                                <img src="./assets/images/character/browser2.png" alt="" class="object-cover  h-auto xl:h-[150px] w-[100%] relative rounded-[1rem] ">
+                            </div>
 
-                            <img src="./assets/images/character/browser5.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
-                            <img src="./assets/images/character/browser6.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
+                            <div class="relative duration-100 news_image w-[47.3%] h-auto cursor-pointer">
+                                <img src="./assets/images/character/browser3.png" alt="" class="object-cover  h-auto xl:h-[150px] w-[100%] relative rounded-[1rem] ">
+                            </div>
+                            <div class="relative duration-100 news_image w-[47.3%] h-auto cursor-pointer">
+                                <img src="./assets/images/character/browser4.png" alt="" class="object-cover  h-auto xl:h-[150px] w-[100%] relative rounded-[1rem] ">
+                            </div>
+
+                            <div class="relative duration-100 news_image w-[47.3%] h-auto cursor-pointer">
+                                <img src="./assets/images/character/browser5.png" alt="" class="object-cover  h-auto xl:h-[150px] w-[100%] relative rounded-[1rem] ">
+                            </div>
+                            <div class="relative duration-100 news_image w-[47.3%] h-auto cursor-pointer">
+                                <img src="./assets/images/character/browser6.png" alt="" class="object-cover  h-auto xl:h-[150px] w-[100%] relative rounded-[1rem] ">
+                            </div>
 
                           </div>
 
@@ -408,7 +421,23 @@
 
                  </div>
 
+                   <!-- pop up image -->
+                <div class="popUp_container w-full h-full   absolute left-0 top-0 hidden justify-center items-center z-10">
+
+                    <div class=" w-[90%] md:w-[600px] h-[700px] relative bg-white border-[2px] border-black ">
+                        
+                        <div class="close_btn z-10 absolute right-[-20px] top-[-20px] md:right-[-40px] md:top-[-40px] h-[40px] lg:h-[60px] w-[40px] lg:w-[60px] rounded-full border-[2px] border-black bg-white cursor-pointer flex justify-center items-center">
+                            <img src="./assets/images/close.svg" alt="" class="w-[50%] h-auto object-contain ">
+                        </div>
+
+                        <img src="./assets/images/browser_center1.png" alt="img" class="w-full h-full object-cover relative image_popUp">
+                    </div>
+
+                </div>
+
                </div>
+
+             
 
             </div>
 

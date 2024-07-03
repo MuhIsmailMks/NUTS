@@ -16,28 +16,61 @@ links.addEventListener('click', (e) => {
 
 
 // copy address 
-const btnsCopy = document.querySelectorAll('.copy_btn');  
+const btnsCopy = document.querySelectorAll('.copy_btns');  
 const btn = document.querySelector('.copy_btn');  
 const text = document.querySelector('.contract_address');  
+
  
 const contractText = text.innerText;
 let timeout;
- 
-btn.addEventListener('click', function () { 
-    navigator.clipboard.writeText(text.innerText).then(function() { 
-        text.innerText = 'Copied';
- 
-        clearTimeout(timeout);
-        timeout = setTimeout(function () {
-            text.innerText = contractText;
-        },1000);
-    }).catch(function(err) {
-        console.error('not copied in keyboard ', err);
+
+btnsCopy.forEach(copyBtn => {
+    const btn = copyBtn.querySelector('.copy_btn');  
+    const text = copyBtn.querySelector('.contract_address');  
+
+    
+    const contractText = text.innerText;
+    let timeout;
+
+    btn.addEventListener('click', function () { 
+        navigator.clipboard.writeText(text.innerText).then(function() { 
+            text.innerText = 'Copied';
+     
+            clearTimeout(timeout);
+            timeout = setTimeout(function () {
+                text.innerText = contractText;
+            },1000);
+        }).catch(function(err) {
+            console.error('not copied in keyboard ', err);
+        });
     });
-});
+    
+    
+})
+ 
+
+// token image click
+const news_images = document.querySelectorAll('.news_image');
+const popUp_container = document.querySelector('.popUp_container');
+const image_popUp_container = document.querySelector('.popUp_container .image_popUp');
 
 
+news_images.forEach(news_image => {
+   news_image.addEventListener('click', () => {
+    const img = news_image.querySelector('img').src;
+    console.log(img);
 
+    image_popUp_container.src = img
+
+    popUp_container.classList.add('flex')
+    popUp_container.classList.remove('hidden')
+   })
+})
+
+popUp_container.addEventListener('click', () =>{
+    popUp_container.classList.remove('flex')
+    popUp_container.classList.add('hidden')
+})
 
 
 // input sol
