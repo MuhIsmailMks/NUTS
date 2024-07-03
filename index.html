@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- logo -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/character/nutz_logo.png"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/character/nutz_logo.png">
+  <!-- CSS Locomotive Scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css"> 
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
@@ -14,10 +16,10 @@
 </head>
 <body>
 
-    <div class="w-full  relative max-w-[100%] h-auto overflow-hidden flex flex-col items-center">
+    <div data-scroll-container class="w-full  relative max-w-[100%] h-auto overflow-hidden flex flex-col items-center bg-[#FFE6C7]">
 
         <!-- navbar -->
-         <nav class="flex absolute z-[9999] top-[1.5rem] md:top-[2rem] justify-between items-center w-full h-[80px] px-[1rem] md:px-[2rem]">
+         <nav   class="flex fixed z-[6] top-[1.5rem] md:top-[2rem] justify-between items-center w-full h-[80px] px-[1rem] md:px-[2rem]">
 
             <!-- logo -->
             <div class="logo relative flex justify-center items-center">
@@ -29,13 +31,13 @@
 
                 <!-- links -->
                 <ul class="flex flex-col lg:flex-row items-center w-full lg:w-auto gap-[1.5rem] lg:gap-[1rem] uppercase text-white text-[.9rem] md:text-[1rem] lg:text-[1.1rem] min-[1800px]:text-[1.3rem]">
-                    <li><a href="#home" class="medium_stroke">home</a></li>
-                    <li><a href="#About" class="medium_stroke">about</a></li>
-                    <li><a href="#Tokenomics" class="medium_stroke">tokenomics</a></li> 
-                    <li><a href="#Nutzmap" class="medium_stroke">Nutzmap</a></li>
-                    <li><a href="#Gallery" class="medium_stroke">gallery</a></li>
-                    <li><a href="#Partnership" class="medium_stroke">partnership</a></li>
-                    <li><a href="#Contacts" class="medium_stroke">contacts</a></li>
+                    <li><a href="#home" data-scroll-to="#home" class="medium_stroke">home</a></li>
+                    <li><a href="#About" data-scroll-to="#About" class="medium_stroke">about</a></li>
+                    <li><a href="#Tokenomics" data-scroll-to="#Tokenomics" class="medium_stroke">tokenomics</a></li> 
+                    <li><a href="#Nutzmap" data-scroll-to="#Nutzmap" class="medium_stroke">Nutzmap</a></li>
+                    <li><a href="#Gallery" data-scroll-to="#Gallery"  class="medium_stroke">gallery</a></li>
+                    <li><a href="#Partnership" data-scroll-to="#Partnership" class="medium_stroke">partnership</a></li>
+                    <li><a href="#Contacts" data-scroll-to="#Contacts"  class="medium_stroke">contacts</a></li>
                 </ul>
 
                  <!-- social mobile-->
@@ -76,109 +78,110 @@
          </nav>
 
          <!-- hero home -->
-          <section id="homes" class="hero h-auto w-full relative">
-            
-            <!-- bg -->
-            <img src="./assets/images/background/background_hero.svg" alt="" class="object-cover h-[1000px]  xl:h-auto w-full relative z-0  ">
+          <section  id="homes" class="hero h-auto w-full relative z-0">
 
-            <!-- character -->
-            <div class="absolute w-full h-full z-[1] top-0 left-0">
+             <!-- bg -->
+             <img src="./assets/images/background/background_hero.svg" alt="" class="object-cover h-[1000px]  xl:h-auto w-full relative z-0  ">
 
-                <!-- ban -->
-                <img src="./assets/images/character/purple_ban.png" alt="" class="object-contain absolute h-auto w-[40vw] md:w-[305px] min-[1500px]:w-[20vw] left-0 lg:left-[12%] bottom-[19%] xl:bottom-[7%] side_animation">
-
-                <!-- pepe help -->
-                <img src="./assets/images/character/pepe-half.png" alt="" class="object-contain absolute h-auto w-[20vw] xl:w-[118px] min-[1500px]:w-[10vw] right-[25%] top-[55%] md:top-[550px] lg:top-[500px] xl:top-[23vw] wobble">
-
-                <!-- nutz -->
-                <img src="./assets/images/character/hero_nutz.png" alt="" class="object-contain absolute h-auto w-[30vw] xl:w-[148px] min-[1500px]:w-[12vw] right-[-3%] xl:right-[0] top-[70%] min-[600px]:top-[600px] xl:top-[24vw] to_right_animation">
-
-            </div>
-
-            <!-- content -->
-             <div class="content absolute left-0 top-0 z-10 w-full h-full flex justify-center items-center">
-
-                <!-- contract -->
-                 <div class="contract absolute md:left-[5%] top-[15%] md:top-[20%] flex flex-col max-[768px]:items-center gap-[.5rem] md:gap-[1.25rem] copy_btns">
-                    <h2 class="text-[24px]  min-[1800px]:text-[28px] medium_stroke">BSC20 Contract</h2>
-                    <div class="flex items-center gap-[1rem]">
-                        <h3 class="text-[20px] min-[1800px]:text-[23px] medium_stroke contract_address">0x55...14e69</h3>
-                        <img src="./assets/images/copy_icon.png" alt="" class="object-contain h-auto w-[30px]  min-[1800px]:w-[40px] cursor-pointer copy_btn ">
-                    </div>
-                 </div>
-
-                 <!-- title -->
-                  <div class="title flex justify-between items-center flex-col gap-[-2rem] absolute top-[25%] max-w-[90%]">
-                    
-                    <!-- images nutz -->
-                     <div class="flex relative w-full justify-center gap-[-1rem] items-center">
-                        <img src="./assets/images/character/Nutz_n.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation ">
-                        <img src="./assets/images/character/Nutz_u.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -1s;">
-                        <img src="./assets/images/character/Nutz_t.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -4s;">
-                        <img src="./assets/images/character/Nutz_z.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -5s;">
-                        <img src="./assets/images/character/Nutz_p.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation" style="animation-delay: -7s;">
-                        <img src="./assets/images/character/Nutz_a.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -3s;">
-                        <img src="./assets/images/character/Nutz_d.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -2s;">
-                     </div>
-                    <!-- about title -->
-                    <h2 class="medium_stroke w-[90%] md:w-[450px] text-center text-[20px]  min-[1800px]:text-[24px]">HI, IM NUTZ PAD, THE CUTEST NUTS ON 
-                        THE CRYPTO SPACE.</h2>
-                  </div>
-
-                <!-- progress container -->
-                <div class="progress flex justify-between items-center md:items-end flex-col gap-[1rem] absolute bottom-[5%] md:bottom-[20%] md:right-[10%] "> 
-
-                    <!-- buy btn -->
-                    <button class="hero__btn w-[248px] h-[53px] relative bg-white border-[2px] border-black rounded-full flex justify-between items-center px-[.25rem] ">
-
-                        <!-- BNB input -->
-                        <div class="input_container flex items-center text-black ml-[1rem]">
-                            <input id="numberInput"  class="auto-width-input w-auto border-none outline-none inline-block" type="text"  value="0"> 
-                            <p class="suffix-text" id="suffixText">BNB</p>
-                        </div>
-
-                        <!-- buy btn -->
-                        <div class="buy_btn relative flex justify-center items-center border-black border-[2px] rounded-full w-[93px] h-[43px] bg-[#FFC374] medium_stroke duration-200 hover:scale-105">
-                            <p class="text-[22px] font-bold">BUY</p>  
-                        </div>
-
-                    </button>
-
-                    <!-- progress -->
-                     <div class="relative flex flex-col items-center h-auto w-[370px] min-[1800px]:w-[440px] max-w-[95vw] text-black ">
-                        <div class="flex items-center justify-between w-full text-[14px]">
-                            <p>min buy 0.1 bnb</p>
-                            <p>max buy 200 bnb</p>
-                        </div>
-                        <div class="w-full h-auto flex justify-center items-center">
-                            <img src="./assets/images/progress_bg.svg" alt="" class="object-contain h-auto w-full relative">
-
-                            <p class="absolute z-[1] uppercase text-[16px]">presale progress</p>
-                            <p class="absolute right-[10%] z-[1] uppercase text-[12px]">$0.00</p>
-                        </div>
-
-                     </div>
-
-                </div>
-
+             <!-- character -->
+             <div class="absolute w-full h-full z-[1] top-0 left-0">
+ 
+                 <!-- ban -->
+                 <img src="./assets/images/character/purple_ban.png" alt="" class="object-contain absolute h-auto w-[40vw] md:w-[305px] min-[1500px]:w-[20vw] left-0 lg:left-[12%] bottom-[19%] xl:bottom-[7%] side_animation">
+ 
+                 <!-- pepe help -->
+                 <img src="./assets/images/character/pepe-half.png" alt="" class="object-contain absolute h-auto w-[20vw] xl:w-[118px] min-[1500px]:w-[10vw] right-[25%] top-[55%] md:top-[550px] lg:top-[500px] xl:top-[23vw] wobble">
+ 
+                 <!-- nutz -->
+                 <img src="./assets/images/character/hero_nutz.png" alt="" class="object-contain absolute h-auto w-[30vw] xl:w-[148px] min-[1500px]:w-[12vw] right-[-3%] xl:right-[0] top-[70%] min-[600px]:top-[600px] xl:top-[24vw] to_right_animation">
+ 
              </div>
+ 
+             <!-- content -->
+              <div class="content absolute left-0 top-0 z-10 w-full h-full flex justify-center items-center">
+ 
+                 <!-- contract -->
+                  <div class="contract absolute md:left-[5%] top-[15%] md:top-[20%] flex flex-col max-[768px]:items-center gap-[.5rem] md:gap-[1.25rem] copy_btns">
+                     <h2 class="text-[24px]  min-[1800px]:text-[28px] medium_stroke">BSC20 Contract</h2>
+                     <div class="flex items-center gap-[1rem]">
+                         <h3 class="text-[20px] min-[1800px]:text-[23px] medium_stroke contract_address">0x55...14e69</h3>
+                         <img src="./assets/images/copy_icon.png" alt="" class="object-contain h-auto w-[30px]  min-[1800px]:w-[40px] cursor-pointer copy_btn ">
+                     </div>
+                  </div>
+ 
+                  <!-- title -->
+                   <div class="title flex justify-between items-center flex-col gap-[-2rem] absolute top-[25%] max-w-[90%]">
+                     
+                     <!-- images nutz -->
+                      <div class="flex relative w-full justify-center gap-[-1rem] items-center">
+                         <img src="./assets/images/character/Nutz_n.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation ">
+                         <img src="./assets/images/character/Nutz_u.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -1s;">
+                         <img src="./assets/images/character/Nutz_t.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -4s;">
+                         <img src="./assets/images/character/Nutz_z.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -5s;">
+                         <img src="./assets/images/character/Nutz_p.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation" style="animation-delay: -7s;">
+                         <img src="./assets/images/character/Nutz_a.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -3s;">
+                         <img src="./assets/images/character/Nutz_d.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -2s;">
+                      </div>
+                     <!-- about title -->
+                     <h2 class="medium_stroke w-[90%] md:w-[450px] text-center text-[20px]  min-[1800px]:text-[24px]">HI, IM NUTZ PAD, THE CUTEST NUTS ON 
+                         THE CRYPTO SPACE.</h2>
+                   </div>
+ 
+                 <!-- progress container -->
+                 <div class="progress flex justify-between items-center md:items-end flex-col gap-[1rem] absolute bottom-[5%] md:bottom-[20%] md:right-[10%] "> 
+ 
+                     <!-- buy btn -->
+                     <button class="hero__btn w-[248px] h-[53px] relative bg-white border-[2px] border-black rounded-full flex justify-between items-center px-[.25rem] ">
+ 
+                         <!-- BNB input -->
+                         <div class="input_container flex items-center text-black ml-[1rem]">
+                             <input id="numberInput"  class="auto-width-input w-auto border-none outline-none inline-block" type="text"  value="0"> 
+                             <p class="suffix-text" id="suffixText">BNB</p>
+                         </div>
+ 
+                         <!-- buy btn -->
+                         <div class="buy_btn relative flex justify-center items-center border-black border-[2px] rounded-full w-[93px] h-[43px] bg-[#FFC374] medium_stroke duration-200 hover:scale-105">
+                             <p class="text-[22px] font-bold">BUY</p>  
+                         </div>
+ 
+                     </button>
+ 
+                     <!-- progress -->
+                      <div class="relative flex flex-col items-center h-auto w-[370px] min-[1800px]:w-[440px] max-w-[95vw] text-black ">
+                         <div class="flex items-center justify-between w-full text-[14px]">
+                             <p>min buy 0.1 bnb</p>
+                             <p>max buy 200 bnb</p>
+                         </div>
+                         <div class="w-full h-auto flex justify-center items-center">
+                             <img src="./assets/images/progress_bg.svg" alt="" class="object-contain h-auto w-full relative">
+ 
+                             <p class="absolute z-[1] uppercase text-[16px]">presale progress</p>
+                             <p class="absolute right-[10%] z-[1] uppercase text-[12px]">$0.00</p>
+                         </div>
+ 
+                      </div>
+ 
+                 </div>
+ 
+              </div>
+     
 
 
           </section>
 
 
           <!-- about -->
-          <section id="About" class="hero bg-[#FFE6C7  ] h-[700px] xl:h-[50vw] w-full relative flex flex-col items-center lg:items-start py-[3rem]">
+          <section data-scroll-section id="About" class="hero  h-[700px] xl:h-[55vw] w-full relative flex flex-col items-center lg:items-start z-[9] ">
              
+            <div class="w-full h-full relative flex flex-col items-center lg:items-start py-[3rem] pt-[30vw] xl:pt-[10vw]"  >
+                
             <!-- bg -->
-             <img src="./assets/images/background/about_background.png" alt="" class="object-cover h-full lg:h-auto w-full absolute bottom-0">
+             <img src="./assets/images/background/about_background.png" alt="" class="object-cover h-full lg:h-auto w-full absolute bottom-0"  >
 
              <!-- train -->
              <img src="./assets/images/train.png" alt="" class="object-contain h-auto w-[700px] absolute bottom-[9%] left-[0%]">
-
-            <!-- content --> 
-             
-              
+ 
+             <!-- content -->  
               <!-- images -->
                <div class="title_about w-auto relative flex justify-center items-center text-[6vw] xl:text-[63.64px] min-[1800px]:text-[3vw] bold_stroke gap-[1rem] ml-[10vw]">
                 <h1 class="text-white mr-[.5rem]">about</h1>
@@ -202,18 +205,13 @@
                 </button>
              </div>
 
+            </div>
 
-          </section>
-
-
-
-
-
-
+          </section> 
 
 
           <!-- tokenomics -->
-          <section id="Tokenomics" class="tokenomics h-auto w-full relative bg-[#508955] py-[3rem]">
+          <section data-scroll-section id="Tokenomics" class="tokenomics h-auto w-full relative bg-[#508955] py-[3rem] z-[9]">
               
             <!-- slider -->
              <div class="slide_text_container w-full h-auto relative">
@@ -523,16 +521,12 @@
             </div>
 
           </section>
-
-
-
-
-
+ 
 
 
 
             <!-- dex -->
-            <section class="dex h-auto w-full relative bg-[#FFC73F] py-[3rem]">
+            <section data-scroll-section class="dex h-auto w-full relative bg-[#FFC73F] py-[3rem] z-[9]">
               
                 <!-- title -->
                  <h1 class="dex_title text-center text-white extra_bold_stroke text-[9vw] xl:text-[5vw]">GET $NUTZ on dex</h1>
@@ -602,8 +596,13 @@
     </div>
 
 
-    <!-- script -->
+    <!-- locomotive parallax -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
+    <!-- lottie -->
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    
+    <!-- script -->
      <script src="./assets/js/index.js"></script>
 </body>
 </html>
