@@ -192,15 +192,26 @@
 
 
           <!-- about -->
-          <section  id="About" class="about_parallax  h-[750px] xl:h-[50vw] w-full relative flex flex-col items-center lg:items-start  ">
+          <section  id="About" class="about_parallax  h-[750px] md:h-[850px] xl:h-[50vw] w-full relative flex flex-col items-center lg:items-start  ">
              
-            <div   class="w-full h-full relative flex flex-col items-center lg:items-start py-[3rem] pt-[20vw] md:pt-[3rem] xl:pt-[6vw]"  >
+            <div  class="w-full h-full relative flex flex-col items-center xl:items-start py-[3rem] pt-[20vw] md:pt-[2rem] xl:pt-[6vw]"  >
                 
             <!-- bg -->
-             <img src="./assets/images/background/about_background.png" alt="" class="object-cover h-full lg:h-auto w-full absolute bottom-0"  >
+             <img src="./assets/images/background/about_background.png" alt="" class="object-cover h-full xl:h-auto w-full absolute bottom-0"  >
 
-             <!-- train -->
-             <img src="./assets/images/train.png" alt="" class="object-contain h-auto w-[700px] absolute bottom-[9%] left-[5%] train_animation">
+             <!-- train --> 
+              <figure class="absolute w-[50%] h-auto bottom-[8%] left-0 bg-red-400 flex justify-center items-center trainMove">
+
+                <!-- train -->
+                 <img src="./assets/images/train1.png" alt="" class="object-contain h-auto w-[50vw] lg:w-[20vw] absolute bottom-0  z-[1]">
+
+
+                 <!-- train2 -->
+                 <div class="h-full w-[100%] absolute bottom-0  left-[75%] lg:left-[65%] trainMove2">
+                    <img src="./assets/images/train2.png" alt="" class="object-contain h-auto w-[50vw] lg:w-[20vw] absolute bottom-0  z-[0]" > 
+                     <img src="./assets/images/arrow_train.png" alt="" class="object-contain h-auto w-[13vw] lg:w-[5vw] absolute bottom-0 z-[0] left-[47%] lg:left-[20%] arrow_train_animation" >
+                 </div>
+              </figure>
  
              <!-- content -->  
               <!-- images -->
@@ -214,7 +225,7 @@
                <p class="medium_stroke my-[1rem] w-full  relative text-center text-[18px] md:text-[2vw] xl:text-[24px] min-[1600px]:text-[1.2vw] xl:w-[801px]  min-[1800px]:w-[50%] max-w-[90%] ml-[5vw]">NUTZ CONTINUES TO RUN, but unfortunately has left ofinvestors behind. nutz here to rescue you with those life changing games you missed on before.</p>
 
             <!-- btns -->
-            <div class="flex items-center justify-center gap-[2rem] relative lg:absolute lg:bottom-[11%] lg:right-[20%] z-10">
+            <div class="flex items-center justify-center gap-[2rem] relative xl:absolute xl:bottom-[11%] xl:right-[20%] z-10">
                 <button class="cursor-pointer relative h-[50px] md:h-[72px] w-auto flex justify-center items-center duration-150 hover:scale-110">
                     <span class="w-full h-full absolute z-10 left-0 top-0"></span>
                    <img src="./assets/images/dextools_btn.svg" alt="" class="h-full w-auto object-contain">
