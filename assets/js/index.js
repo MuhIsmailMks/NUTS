@@ -4,29 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         el: document.querySelector('[data-scroll-container]'),
         smooth: true
     });
-
-    
-   const offsetMobile = 0;
-   const offsetDesktop = 100;
  
-   function getOffset() {
-     return window.innerWidth < 768 ? offsetMobile : offsetDesktop;
-   }
-
-   document.querySelectorAll('a[data-scroll-to]').forEach(anchor => {
-     anchor.addEventListener('click', function(e) {
-       e.preventDefault();
-       const target = document.querySelector(this.getAttribute('data-scroll-to'));
-
-       scroll.scrollTo(target, {
-         offset: getOffset(), 
-       });
-     });
-   });
- 
-   window.addEventListener('resize', () => {
-     scroll.update(); 
-   });
 
 });
 
