@@ -9,17 +9,38 @@
 
 
 // gsap scroll animation
-gsap.to(".hero_parallax", {
-    yPercent: 50,
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".hero_parallax",
-        start: "top top", 
-        end: "bottom top", 
-        scrub: true 
-    }
-});
+document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
 
+    ScrollTrigger.matchMedia({
+        // Desktop
+        "(min-width: 1024px)": function() {
+            gsap.to(".hero_parallax", {
+                yPercent: 50,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".hero_parallax",
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+        },
+        // Mobile
+        "(max-width: 1023px)": function() {
+            gsap.to(".hero_parallax", {
+                yPercent: 20,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".hero_parallax",
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+        }
+    });
+});
 // nav handler
 const menu_btn = document.querySelector('nav .menu');
 const links = document.querySelector('nav .links');
