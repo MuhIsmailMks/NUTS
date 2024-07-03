@@ -9,6 +9,11 @@
   src: url("../fonts/Bardy.ttf");
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'bardy', cursive; 
     color:white;
@@ -24,6 +29,15 @@ body{
 
 .extra_bold_stroke{
     -webkit-text-stroke: 5px black;
+}
+
+
+.thin_shcdow{
+    text-shadow: 0px .2vw 0px  #000000;
+}
+
+.bold_shcdow{
+    text-shadow: 0px .6vw 0px  #000000;
 }
 
 

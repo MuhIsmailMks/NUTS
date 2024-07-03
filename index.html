@@ -168,10 +168,10 @@
 
 
           <!-- about -->
-          <section class="hero bg-[#FFE6C7  ] h-[700px] xl:h-[60vw] w-full relative flex flex-col items-center lg:items-start py-[3rem]">
+          <section id="About" class="hero bg-[#FFE6C7  ] h-[700px] xl:h-[60vw] w-full relative flex flex-col items-center lg:items-start py-[3rem]">
              
             <!-- bg -->
-             <img src="./assets/images/background/about_background.png" alt="" class="object-cover h-auto w-full absolute bottom-0">
+             <img src="./assets/images/background/about_background.png" alt="" class="object-cover h-full lg:h-auto w-full absolute bottom-0">
 
              <!-- train -->
              <img src="./assets/images/train.png" alt="" class="object-contain h-auto w-[700px] absolute bottom-[9%] left-[0%]">
@@ -205,8 +205,15 @@
 
           </section>
 
+
+
+
+
+
+
+
           <!-- tokenomics -->
-          <section class="tokenomics h-auto w-full relative bg-[#508955] py-[3rem]">
+          <section id="Tokenomics" class="tokenomics h-auto w-full relative bg-[#508955] py-[3rem]">
               
             <!-- slider -->
              <div class="slide_text_container w-full h-auto relative">
@@ -240,11 +247,173 @@
              </div>
             
 
+             <!-- browser -->
+              <div class="w-[93%] max-w-[1800px] relative h-auto xl:h-[1152px] bg-[#B7B7B7] mx-auto rounded-[30px] lg:rounded-[50px] flex justify-center items-center flex-col px-[1rem] lg:px-[2rem]  gap-[1rem] max-[1023px]:py-[2rem] my-[2rem]">
+            
+              <!-- title browser -->
+               <div class="flex relative justify-between items-center w-full">
+               <p class="text-black text-[24px]">Browser</p>
 
-            <!-- content -->
-             <div class="w-full flex flex-col items-center relative h-auto my-[4rem]">
-                <img src="./assets/images/token_image.png" alt="" class="w-[90%] max-w-[2900px] h-auto object-contain relative mb-[4rem]">
+               <div class="flex justify-center items-center gap-[1rem]">
 
+                <span class="rounded-full h-[28px] w-[28px] bg-[#60BF89] border-[3px] border-[#181818]"></span>
+                <span class="rounded-full h-[28px] w-[28px] bg-[#FFC374] border-[3px] border-[#181818]"></span>
+                <span class="rounded-full h-[28px] w-[28px] bg-[#FF8080] border-[3px] border-[#181818]"></span>
+
+               </div>
+
+               </div>
+
+              <!-- content -->
+               <div  class="flex relative justify-between items-center w-full flex-col  h-[90%] bg-[#FFFFFF]     ">
+
+                <!-- top -->
+                 <div class="flex justify-between items-center flex-wrap w-full bg-[#3B674E] h-[160px] md:h-[100px]   px-[1rem]">
+                    
+                    <!-- logo -->
+                    <img src="./assets/images/browser_title.png" alt="" class="object-contain h-[30px] md:h-[40px] xl:h-[50px] w-auto">
+
+                    <!-- contract desktop -->
+                     <div class=" w-[60%] hidden xl:w-[740px] h-[52px] bg-white rounded-[20px] px-[.65rem] md:flex justify-between items-center">
+
+                        <p class="text-black text-[10px] md:text-[15px] pl-[.5rem]">CONTRACT : 0X0000000....DEAD</p>
+
+                       
+                        <div class="relative cursor-pointer duration-150 hover:scale-105">
+                            <span class="w-full h-full absolute z-10 left-0 top-0"></span>
+                            <img src="./assets/images/token_address.svg" alt="" class="object-contain h--[95%] w-auto">
+                        </div>
+
+                     </div>
+
+                     <!-- buy -->
+                      <div class="text-[18px] md:text-[16px] medium_stroke tracking-[-1px] thin_shcdow  ">
+                        buy $NUTz
+                      </div>
+
+                       <!-- contract mobile-->
+                     <div class="w-full flex xl:w-[740px] h-[52px] bg-white rounded-[20px] px-[.65rem] md:hidden justify-between items-center">
+
+                        <p class="text-black text-[10px] md:text-[15px] pl-[.5rem]">CONTRACT : 0X0000000....DEAD</p>
+
+                       
+                        <div class="relative cursor-pointer duration-150 hover:scale-105">
+                            <span class="w-full h-full absolute z-10 left-0 top-0"></span>
+                            <img src="./assets/images/token_address.svg" alt="" class="object-contain h--[95%] w-auto">
+                        </div>
+
+                     </div>
+
+                 </div>
+
+                <!-- news -->
+                 <div  class="flex justify-center items-center flex-col lg:flex-row h w-full h-auto xl:h-[90%] px-[.75rem] overflow-auto">
+                    
+                    <!-- left -->
+                     <div class="flex justify-center items-center flex-col w-full lg:w-[25%] h-full  gap-[1rem] pt-[1rem] lg:pt-[2rem]">
+                       
+                        <!-- image -->
+                        <div class="w-full h-[300px] border-[10px] rounded-xl border-[#BDB480] bg-white flex justify-center items-center  ">
+                            <img src="./assets/images/token1.png" alt="" class="object-contain h-auto w-[70%] lg:w-full ">
+                        </div>
+
+                        <!-- name -->
+                         <div class="w-full h-auto flex justify-center items-center flex-col gap-[.6rem] text-[13px] min-[1400px]:text-[14px]">
+                            <div class="w-full text-black  flex justify-between items-center ">
+                                <p class="text-[#828282]">Name :</p>
+                                <p>nutz pad</p>
+                            </div>
+                            <div class="w-full text-black  flex justify-between items-center ">
+                                <p class="text-[#828282]">code :</p>
+                                <p>$nutz</p>
+                            </div>
+                            <div class="w-full text-black  flex justify-between items-center ">
+                                <p class="text-[#828282]">contract :</p>
+                                <p>0x00...dead</p>
+                            </div>
+                            <div class="w-full text-black  flex justify-between items-center ">
+                                <p class="text-[#828282]">looking for :</p>
+                                <p>10 MILLION MCAP</p>
+                            </div>
+                         </div>
+
+                         <!-- images -->
+                          <div class="flex flex-wrap justify-between gap-[.95rem] overflow-hidden h-auto xl:h-[470px] ">
+                            <img src="./assets/images/character/browser1.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
+                            <img src="./assets/images/character/browser2.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
+
+                            <img src="./assets/images/character/browser3.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
+                            <img src="./assets/images/character/browser4.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
+
+                            <img src="./assets/images/character/browser5.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
+                            <img src="./assets/images/character/browser6.png" alt="" class="object-cover cursor-pointer h-auto xl:h-[160px] w-[47%] relative rounded-[1rem]">
+
+                          </div>
+
+                     </div>
+
+                     <!-- center -->
+                      <div  class="flex justify-start items-center flex-col w-full lg:w-[55%] h-full    pt-[2rem]  lg:px-[1rem]">
+                    
+                        <!-- title -->
+                        <h2 class="text-white bold_stroke bold_shcdow text-[10vw] lg:text-[4rem] w-full text-center lg:text-left">Nutz pad</h2>
+
+                        <!-- image -->
+                        <img src="./assets/images/browser_center1.png" alt="" class="object-cover h-[530px] w-full relative mt-[1rem]">
+
+                        <!-- message -->
+                         <div class="bg-[#727272] w-full h-[190px] lg:h-[100px] flex justify-center items-center mb-[1rem]">
+                         
+                            <div class="w-[90%] h-[90%] relative border-[4px] border-[#181818] rounded-[20px] bg-white flex lg:items-center pl-[.75rem]  max-[1023px]:pt-[1rem]">
+
+                                <p class="w-full lg:w-[88%] pr-[1rem] leading-[1] text-black text-[12px] max-[1023px]:text-center">NUTZ introduces its native token, $NUTZ, which serves as the backbone of the ecosystem. As a $NUTZ holder, you gain access to a range of benefits, including staking rewards, voting rights, and exclusive access to new features and partnerships.</p>
+
+                                <div class="absolute bottom-[.75rem]  lg:top-0 right-0  w-full lg:w-[20%] lg:h-full  flex justify-center items-center"> 
+                                    <div class="relative cursor-pointer   duration-150 hover:scale-110">
+                                        <span class="w-full h-full absolute z-10 left-0 top-0"></span>
+                                        <img src="./assets/images/send_btn.svg" alt="" class="object-contain h-auto w-full">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                         </div>
+
+                           <!-- image -->
+                        <div class="w-full h-auto lg:h-[200px] overflow-hidden relative">
+                            <img src="./assets/images/browser_center2.png" alt="" class="object-cover h-auto w-full relative ">
+                        </div>
+
+                      </div>
+
+                      <!-- right -->
+                      <div  class="flex items-center flex-col w-full lg:w-[20%] h-full  gap-[1rem] lg:pt-[9rem] overflow-hidden  max-[1023px]:mt-[1rem]"> 
+
+
+                        <div class="relative w-full h-auto">
+                            <p class="absolute left-[1rem] top-[.5rem] medium_stroke text-[18px] thin_shcdow">
+                                buy the $NUTz 
+                                <br>
+                                <span class="text-[#FF8080]">NOW!!!</span>
+                            </p>
+                            <img src="./assets/images/browser_right.png" alt="" class="object-contain h-auto w-full">
+                        </div>
+
+                        <!-- none image -->
+                         <div class="w-full h-[50vw] lg:h-[400px] relative bg-[#FFC374]"></div>
+                         <div class="w-full h-[50vw] lg:h-[250px] relative bg-[#FF8080]"></div>
+                         <div class="w-full h-[50vw] lg:h-[200px] relative bg-[#106F98]"></div>
+
+                      </div>
+
+                 </div>
+
+               </div>
+
+            </div>
+
+            <!-- social -->
+             <div class="w-full flex flex-col items-center relative h-auto my-[4rem]"> 
                 <div class="social_media relative flex justify-center xl:justify-between flex-wrap gap-[2rem] items-center w-full h-auto px-[1rem] xl:px-[3rem] max-w-[1900px]">
 
                     <a href="#" class="social relative bg-[#E9BC50] min-w-[140px] w-[33%] h-[200px] md:w-[327px] md:h-[413px] rounded-[30px] md:rounded-[76.94px] border-black border-[2px] md:border-[5px] flex flex-col items-center py-[.5rem] md:py-[1rem] duration-100 ease-in rotate-[8deg] hover:rotate-0">
@@ -324,6 +493,13 @@
             </div>
 
           </section>
+
+
+
+
+
+
+
 
             <!-- dex -->
             <section class="dex h-auto w-full relative bg-[#FFC73F] py-[3rem]">

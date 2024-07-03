@@ -4,42 +4,35 @@ const links = document.querySelector('nav .links');
 
 menu_btn.addEventListener('click', () => {
     menu_btn.classList.toggle('active')
-    links.classList.toggle('active')
-    // document.body.classList.toggle('no_scroll') 
+    links.classList.toggle('active') 
 })
  
 links.addEventListener('click', (e) => { 
   if (e.target.tagName === 'A') { 
     menu_btn.classList.remove('active')
-    links.classList.remove('active')
-    // document.body.classList.remove('no_scroll')
+    links.classList.remove('active') 
   } 
 })
 
 
-// copy address
-// Pilih elemen yang sesuai
-const btn = document.querySelector('.copy_btn'); // Ganti #btn dengan selektor yang benar
-const text = document.querySelector('.contract_address'); // Ganti #text dengan selektor yang benar
-
-// Simpan teks asli dari tombol
+// copy address 
+const btnsCopy = document.querySelectorAll('.copy_btn');  
+const btn = document.querySelector('.copy_btn');  
+const text = document.querySelector('.contract_address');  
+ 
 const contractText = text.innerText;
 let timeout;
-
-// Fungsi untuk menangani klik tombol
-btn.addEventListener('click', function () {
-    // Salin teks ke clipboard
-    navigator.clipboard.writeText(text.innerText).then(function() {
-        // Ubah teks tombol menjadi 'Copied'
+ 
+btn.addEventListener('click', function () { 
+    navigator.clipboard.writeText(text.innerText).then(function() { 
         text.innerText = 'Copied';
-
-        // Atur timeout untuk mengembalikan teks asli setelah 3 detik
+ 
         clearTimeout(timeout);
         timeout = setTimeout(function () {
             text.innerText = contractText;
         },1000);
     }).catch(function(err) {
-        console.error('Gagal menyalin teks ke clipboard: ', err);
+        console.error('not copied in keyboard ', err);
     });
 });
 
