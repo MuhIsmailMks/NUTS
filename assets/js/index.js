@@ -1,12 +1,4 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     ScrollSmoother.create({
-//         wrapper: ".container_website", // Pembungkus untuk konten smooth scroll
-//         content: "section", // Konten yang akan di-scroll secara halus
-//         smooth: 1.5, // Kecepatan smoothing (1 adalah default, lebih tinggi lebih halus)
-//         effects: true // Jika Anda ingin menggabungkan dengan ScrollTrigger efek
-//     });
-// });
-
+ 
 
 // gsap scroll animation
 document.addEventListener("DOMContentLoaded", () => {

@@ -238,8 +238,22 @@ li:hover a{
     -o-transform: rotateY(380deg);
 }
 
+/* get nuts */
+.get_nuts{
+    background: linear-gradient(180deg, #FF8080 0%, #FCC680 100%);
+}
 
 /* media queries */
+@media screen and (min-width:3023px) {
+    .thin_shcdow{
+        text-shadow: 0px 5px 0px  #000000;
+    }
+    
+    .bold_shcdow{
+        text-shadow: 0px 8px 0px  #000000;
+    }
+}
+
 @media screen and (max-width:1023px) {
     .medium_stroke{
         -webkit-text-stroke: 1.3px black;
