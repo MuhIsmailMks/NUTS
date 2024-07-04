@@ -167,7 +167,7 @@ li:hover a{
 /* memes */
 .memes_animation{
     animation: memes_animation 10s linear infinite; 
-    width:calc(25vw * 8);
+    width:calc(25vw * 10);
 }
 
 .memes_container.reverse_animation .memes_animation{ 
@@ -203,7 +203,7 @@ li:hover a{
         transform: translate(0);
     }
     to {
-        transform: translate(calc(-25vw* 3))
+        transform: translate(calc(-25vw* 6))
     }
 }
  
@@ -296,7 +296,7 @@ li:hover a{
     .memes_animation{
         animation: memes_animation 10s linear infinite; 
     
-        width:calc(50vw * 8);
+        width:calc(50vw * 10);
     }
      
     @keyframes memes_animation {
@@ -304,7 +304,7 @@ li:hover a{
             transform: translate(0%);
         }
         to {
-            transform: translate(calc(-50vw* 3))
+            transform: translate(calc(-50vw* 6))
         }
     }
 }

@@ -6,6 +6,8 @@ flex justify-center items-center
  min-[1023px]:
  max-[1023px]:
 
+https://t.me/nutzpad
+ https://x.com/nutzpad
  FF8080
 
   <img src="./assets/images/" alt="" class="object-contain h-auto ">
