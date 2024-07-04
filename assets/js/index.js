@@ -18,6 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         },
+        "(min-width: 1024px)": function() {
+            gsap.to(".nutzMap_image", {
+                yPercent: -120,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".nutzMap_image",
+                    start: "top-=200px top",
+                    end: "bottom top",
+                    scrub: 1
+                }
+            });
+        }, 
         // Mobile
         "(max-width: 1023px)": function() {
             gsap.to(".hero_parallax", {
@@ -30,8 +42,22 @@ document.addEventListener("DOMContentLoaded", () => {
                     scrub: true
                 }
             });
-        }
+        },
+        "(max-width: 1024px)": function() {
+            gsap.to(".nutzMap_image", {
+                yPercent: -80,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".nutzMap_image",
+                    start: "top-=200px top",
+                    end: "bottom top",
+                    scrub: 1
+                }
+            });
+        }, 
     });
+
+ 
 });
 // nav handler
 const menu_btn = document.querySelector('nav .menu');

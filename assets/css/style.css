@@ -690,3 +690,20 @@ li:hover a{
       transform: translateX(0%);
     }
 }
+
+
+
+.nutsmap_image_animation{
+    animation: nutzmap 4s ease-in-out infinite;
+  } 
+  @keyframes nutzmap {
+    0% {
+      transform: translateY(0%);
+    }
+    50% { 
+      transform: translateY(.95rem);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+}
