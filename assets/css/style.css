@@ -40,6 +40,10 @@ body{
     text-shadow: 0px .6vw 0px  #000000;
 }
 
+.mirror_image{
+    transform: scaleX(-1);
+}
+
 
 /* navbar */
 li a{
@@ -162,8 +166,8 @@ li:hover a{
 
 /* memes */
 .memes_animation{
-    animation: memes_animation 20s linear infinite; 
-    width:calc(25vw * 5);
+    animation: memes_animation 10s linear infinite; 
+    width:calc(25vw * 8);
 }
 
 .memes_container.reverse_animation .memes_animation{ 
@@ -172,7 +176,7 @@ li:hover a{
 
 .memes_animation .slide{
     perspective:100px;
-    padding:15px;
+    padding:1vw;
     cursor: pointer;
 }
 
@@ -182,6 +186,11 @@ li:hover a{
 
 .memes_container .memes_animation img{
     transition:.3s ease-in;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .memes_container .memes_animation img:hover{
@@ -194,10 +203,21 @@ li:hover a{
         transform: translate(0);
     }
     to {
-        transform: translate(calc(-25vw* 5))
+        transform: translate(calc(-25vw* 3))
     }
 }
  
+
+/* listing */
+.listing_container{
+    background: linear-gradient(180deg, #1BBAFE 0%, #106F98 100%); 
+}
+
+/* patner */
+.patner_container{
+    background: linear-gradient(180deg, #106F98 0%, #FF8080 100%);
+
+}
 
 /* media queries */
 @media screen and (max-width:1023px) {
@@ -242,7 +262,7 @@ li:hover a{
     .memes_animation{
         animation: memes_animation 10s linear infinite; 
     
-        width:calc(50vw * 5);
+        width:calc(50vw * 8);
     }
      
     @keyframes memes_animation {
@@ -250,7 +270,7 @@ li:hover a{
             transform: translate(0%);
         }
         to {
-            transform: translate(calc(-50vw* 5))
+            transform: translate(calc(-50vw* 3))
         }
     }
 }

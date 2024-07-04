@@ -3,6 +3,10 @@ flex justify-between items-center
 flex justify-center items-center
 
  min-[1800px]:
+ min-[1023px]:
+ max-[1023px]:
+
+ FF8080
 
   <img src="./assets/images/" alt="" class="object-contain h-auto ">
 
@@ -21,3 +25,38 @@ hidden
 
 
 ?????
+ max-[1023px]:bottom-[18%] max-[1023px]:left-[13%]
+ max-[1023px]:top-[18%] max-[1023px]:left-[31%]
+ max-[1023px]:top-[18%] max-[1023px]:left-[49%]
+max-[1023px]:top-[18%] max-[1023px]:left-[66%]
+ 
+
+
+                <div class="flex relative items-center justify-center w-[327px] max-w-[90%] lg:w-[1009px] h-[352px] border-[#30324F] border-[6px] rounded-[50px] bg-white">
+                    
+                    <!-- cex -->
+                    <img src="./assets/images/crypto/listing/logo.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[0] left-[13%] lg:left-[10%] max-[1023px]:top-[18%] ">
+
+                    <img src="./assets/images/crypto/listing/logo-1.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[1] left-[31%] lg:left-[18%] max-[1023px]:top-[18%]">
+
+                    <img src="./assets/images/crypto/listing/logo-2.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[2]  left-[49%] lg:left-[25%] max-[1023px]:top-[18%]">
+
+                    <img src="./assets/images/crypto/listing/logo-3.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[3]  left-[66%] lg:left-[32%] max-[1023px]:top-[18%]">
+
+
+                    <img src="./assets/images/crypto/listing/logo-4.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[4]  left-[13%]   min-[1023px]:left-[38%]">  
+                    <img src="./assets/images/crypto/listing/logo-5.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[5] left-[31%] min-[1023px]:left-auto">
+                    <img src="./assets/images/crypto/listing/logo-6.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[6] left-[49%] min-[1023px]:left-auto min-[1023px]:right-[38%]">
+                    <img src="./assets/images/crypto/listing/logo-7.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[7] left-[66%]  min-[1023px]:left-auto min-[1023px]:right-[32%]">
+
+
+                    <img src="./assets/images/crypto/listing/logo-8.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[8] right-[56%] min-[1023px]:right-[25%]  max-[1023px]:bottom-[20%]">
+                    <img src="./assets/images/crypto/listing/logo-9.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[9]  min-[1023px]:right-[18%]  max-[1023px]:bottom-[20%]">
+                    <img src="./assets/images/crypto/listing/logo-10.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute  z-[10] right-[23%] min-[1023px]:right-[10%] max-[1023px]:bottom-[20%]">
+
+                    <!-- character -->
+                    <img src="./assets/images/character/hero_nutz.png" alt="" class="object-contain w-[130px] lg:w-[251px] h-auto absolute left-0 lg:left-[-17%] top-[30%] lg:top-[-34%] mirror_image">
+
+                    <img src="./assets/images/character/nutzmap3.png" alt="" class="object-contain w-[130px] lg:w-[251px] h-auto absolute right-[-10%] bottom-[-30%] ">
+
+                </div>

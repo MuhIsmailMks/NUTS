@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nutzmap and gallery -->
+    <section
+      class="nutzmap w-full h-auto relative flex flex-col items-center py-[2rem]"
+    >
+      <!-- title -->
+      <h2 class="nutzmap_title text-[17vw]">Nutzmap</h2>
+      <!-- image -->
+      <img
+        src="./assets/images/background/nutzmap_image-min.png"
+        alt=""
+        class="w-[80%] h-auto relative object-contain"
+      />
+
+      <!-- maps -->
+      <div
+        id="Nutzmap"
+        class="maps_container w-[93%] max-w-[1400px] relative h-auto lg:h-[1300px] max-[1023px]:mt-[3rem] flex flex-col items-center max-[1023px]:gap-[90px]"
+      >
+        <!-- map1 -->
+        <div
+          class="map max-[500px]:w-[90%] w-[400px] lg:w-auto px-[1rem] py-[1.25rem] lg:py-[.75rem] flex flex-col items-center bg-white rounded-[30px] relative lg:absolute lg:left-0 lg:top-0 z-[1]"
+        >
+          <h2
+            class="text-center lg:text-left min-[1024px]:pl-[2.75rem] w-[100%] text-[22px] md:text-[32px] bold_stroke thin_shcdow mb-[1rem]"
+          >
+            Getting ready
+          </h2>
+
+          <div
+            class="flex w-full flex-col text-black leading-[1] text-[18px] md:text-[24px] gap-[.5rem]"
+          >
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">Community Establishment</p>
+            </div>
+
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">Website Release</p>
+            </div>
+
+            <div class="flex w-[100%] h-auto justify-between pl-[1rem]">
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">NUTZ dApps Release</p>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/map_line_mobile.svg"
+            alt=""
+            class="object-contain h-[100px] absolute w-[auto] bottom-[-90px] lg:hidden"
+          />
+        </div>
+
+        <!-- map2 -->
+        <div
+          class="map max-[500px]:w-[90%] w-[400px] lg:w-[500px] px-[1rem] py-[1.25rem] lg:py-[.75rem] flex flex-col items-center bg-white rounded-[30px] relative lg:absolute lg:right-0 lg:top-[270px] z-[1]"
+        >
+          <h2
+            class="text-center lg:text-left min-[1024px]:pl-[2.75rem] w-[100%] text-[22px] md:text-[32px] bold_stroke thin_shcdow mb-[1rem]"
+          >
+            $NUTZ COOKING
+          </h2>
+
+          <div
+            class="flex w-full flex-col text-black leading-[1] text-[18px] md:text-[24px] gap-[.5rem]"
+          >
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">Token Launch</p>
+            </div>
+
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">CMC/CG Listings</p>
+            </div>
+
+            <div class="flex w-[100%] h-auto justify-between pl-[1rem]">
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">
+                Calls, Community Engagement, Viral Marketing
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/map_line_mobile.svg"
+            alt=""
+            class="object-contain h-[100px] absolute w-[auto] bottom-[-90px] lg:hidden"
+          />
+        </div>
+
+        <!-- map3 -->
+        <div
+          class="map max-[500px]:w-[90%] w-[400px] lg:w-[480px] px-[1rem] py-[1.25rem] lg:py-[.75rem] flex flex-col items-center bg-white rounded-[30px] relative lg:absolute lg:left-0 lg:top-[490px] z-[1]"
+        >
+          <h2
+            class="text-center lg:text-left min-[1024px]:pl-[2.75rem] w-[100%] text-[22px] md:text-[32px] bold_stroke thin_shcdow mb-[1rem]"
+          >
+            MARKETING
+          </h2>
+
+          <div
+            class="flex w-full flex-col text-black leading-[1] text-[18px] md:text-[24px] gap-[.5rem]"
+          >
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">Explosive Marketing Strategy</p>
+            </div>
+
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">Next-Gen Partnerships</p>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/map_line_mobile.svg"
+            alt=""
+            class="object-contain h-[100px] absolute w-[auto] bottom-[-90px] lg:hidden"
+          />
+        </div>
+
+        <!-- map4 -->
+        <div
+          class="map max-[500px]:w-[90%] w-[400px] lg:w-[501px] px-[1rem] py-[1.25rem] lg:py-[.75rem] flex flex-col items-center bg-white rounded-[30px] relative lg:absolute lg:right-0 lg:top-[690px] z-[4]"
+        >
+          <h2
+            class="text-center lg:text-left min-[1024px]:pl-[2.75rem] w-[100%] text-[22px] md:text-[32px] bold_stroke thin_shcdow mb-[1rem]"
+          >
+            $NUTZ SPREAD
+          </h2>
+
+          <div
+            class="flex w-full flex-col text-black leading-[1] text-[18px] md:text-[24px] gap-[.5rem]"
+          >
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">NUTZ Farming Release</p>
+            </div>
+
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">NUTZ Merchandise Release</p>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/map_line_mobile.svg"
+            alt=""
+            class="object-contain h-[100px] absolute w-[auto] bottom-[-90px] lg:hidden"
+          />
+        </div>
+
+        <!-- map5 -->
+        <div
+          class="map max-[500px]:w-[90%] w-[400px] lg:w-auto px-[1rem] py-[1.25rem] lg:py-[.75rem] flex flex-col items-center bg-white rounded-[30px] relative lg:absolute lg:left-0 lg:top-[900px] z-[3]"
+        >
+          <h2
+            class="text-center lg:text-left min-[1024px]:pl-[2.75rem] w-[100%] text-[22px] md:text-[32px] bold_stroke thin_shcdow mb-[1rem]"
+          >
+            Grains and gains
+          </h2>
+
+          <div
+            class="flex w-full flex-col text-black leading-[1] text-[18px] md:text-[24px] gap-[.5rem]"
+          >
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">NUTZ Collection for holders</p>
+            </div>
+
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">Token Burn</p>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/map_line_mobile.svg"
+            alt=""
+            class="object-contain h-[100px] absolute w-[auto] bottom-[-90px] lg:hidden"
+          />
+        </div>
+
+        <!-- map6 -->
+        <div
+          class="map max-[500px]:w-[90%] w-[400px] lg:w-[501px] px-[1rem] py-[1.25rem] lg:py-[.75rem] flex flex-col items-center bg-white rounded-[30px] relative lg:absolute lg:right-0 lg:bottom-0 z-[99]"
+        >
+          <h2
+            class="text-center lg:text-left min-[1024px]:pl-[2.75rem] w-[100%] text-[22px] md:text-[32px] bold_stroke thin_shcdow mb-[1rem]"
+          >
+            HARVEST 2
+          </h2>
+
+          <div
+            class="flex w-full flex-col text-black leading-[1] text-[18px] md:text-[24px] gap-[.5rem]"
+          >
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">?????</p>
+            </div>
+
+            <div
+              class="flex w-full lg:w-[80%] h-auto justify-between pl-[1rem]"
+            >
+              <span
+                class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
+              ></span>
+              <p class="w-[90%]">?????</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- lines -->
+        <!-- 1 -->
+        <img
+          src="./assets/images/map_line1.svg"
+          alt=""
+          class="object-contain h-auto absolute w-[50%] min-[1400px]:right-[200px] max-w-[850px] top-[90px] right-[16vw] min-[2000px]:right-[290px] hidden lg:block"
+        />
+
+        <!-- 2 -->
+        <img
+          src="./assets/images/map_line2.svg"
+          alt=""
+          class="object-contain h-auto absolute w-[50%] right-[380px] min-[1400px]:right-[480px] max-w-[850px] top-[380px] min-[2000px]:right-[290px] hidden lg:block"
+        />
+
+        <!-- 3 -->
+        <img
+          src="./assets/images/map_line3.svg"
+          alt=""
+          class="object-contain h-auto absolute w-[50%] min-[1400px]:right-[14.5vw] max-w-[850px] top-[610px] right-[13vw] min-[2000px]:right-[290px] hidden lg:block z-[2]"
+        />
+
+        <!-- 4 -->
+        <img
+          src="./assets/images/map_line4.svg"
+          alt=""
+          class="object-contain h-auto absolute w-[50%] min-[1400px]:right-[14.5vw] max-w-[850px] top-[810px] right-[13vw] min-[2000px]:right-[290px] hidden lg:block z-[2]"
+        />
+
+        <!-- 5 -->
+        <img
+          src="./assets/images/map_line5.svg"
+          alt=""
+          class="object-contain h-auto absolute w-[50%] right-[380px] min-[1400px]:right-[500px] max-w-[850px] bottom-[50px] min-[2000px]:right-[290px] hidden lg:block"
+        />
+
+        <!-- character map -->
+        <img
+          src="./assets/images/character/nutzmap1.png"
+          alt=""
+          class="object-contain h-auto absolute w-[158px] md:w-[200px] lg:w-[297px] top-[140px] lg:top-[20px] left-[-10%] lg:left-[330px] z-[999]"
+        />
+
+        <img
+          src="./assets/images/character/nutzmap2.png"
+          alt=""
+          class="object-contain h-auto absolute w-[158px] md:w-[200px] lg:w-[297px] top-[650px] lg:top-[570px] right-[-10%] lg:right-[450px] z-[999]"
+        />
+
+        <img
+          src="./assets/images/character/nutzmap3.png"
+          alt=""
+          class="object-contain h-auto absolute w-[158px] md:w-[200px] lg:w-[297px] bottom-[7%] lg:bottom-[20px] left-[-50px] lg:left-[330px] z-[999]"
+        />
+      </div>
+
+      <!-- memes -->
+      <section
+        id="Gallery"
+        class="w-full hidden h-auto relative flex flex-col my-[3rem]"
+      >
+        <!-- row 1 -->
+        <div
+          class="memes_container w-full relative h-[50vw] md:h-[25vw] xl:h-[25vw] min-[2500px]:h-[30vw] grid place-items-center overflow-hidden"
+        >
+          <div class="memes_animation h-full flex">
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser1.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser2.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser3.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser5.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser6.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser2.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/gallery1.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/gallery2.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div
+          class="memes_container reverse_animation pt-[.55rem] w-full relative h-[52vw] md:h-[25vw] xl:h-[25vw] min-[2500px]:h-[30vw] grid place-items-center overflow-hidden"
+        >
+
+          <div class="memes_animation h-full flex">
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/gallery1.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/gallery2.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser6.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser1.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser2.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser2.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser4.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+            >
+              <img
+                src="./assets/images/character/browser5.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </section>
+    
+
+
+    <div class="memes_container reverse_animation pt-[.55rem] w-full relative h-[52vw] md:h-[25vw] xl:h-[25vw] min-[2500px]:h-[30vw] grid place-items-center overflow-hidden">
+                    
+        <div class="memes_animation h-full flex">
+     
+            <div
+            class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+        >
+            <img
+            src="./assets/images/character/gallery1.png"
+            alt=""
+            class="w-full h-full object-cover"
+            />
+        </div>
+
+        <div
+            class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+        >
+            <img
+            src="./assets/images/character/gallery2.png"
+            alt=""
+            class="w-full h-full object-cover"
+            />
+        </div>
+
+        <div
+            class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+        >
+            <img
+            src="./assets/images/character/browser6.png"
+            alt=""
+            class="w-full h-full object-cover"
+            />
+        </div>
+
+        <div
+            class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+        >
+            <img
+            src="./assets/images/character/browser1.png"
+            alt=""
+            class="w-full h-full object-cover"
+            />
+        </div>
+
+        <div
+            class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+        >
+            <img
+            src="./assets/images/character/browser2.png"
+            alt=""
+            class="w-full h-full object-cover"
+            />
+        </div>
+
+        <div class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center" >
+            <img
+            src="./assets/images/character/browser2.png"
+            alt=""
+            class="w-full h-full object-cover"  />
+        </div>
+
+        <div
+            class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+        >
+            <img
+            src="./assets/images/character/browser4.png"
+            alt=""
+            class="w-full h-full object-cover"
+            />
+        </div>
+
+        <div
+            class="slide w-[50vw] md:w-[25vw] h-full flex justify-center items-center"
+        >
+            <img
+            src="./assets/images/character/browser5.png"
+            alt=""
+            class="w-full h-full object-cover"
+            />
+        </div>
+
+        </div>
+
+    </div>
+
+  </body>
+</html>

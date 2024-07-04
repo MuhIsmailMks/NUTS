@@ -23,7 +23,12 @@
     
     .bold_stroke{
         -webkit-text-stroke: 1px black;
-    }
+        transform: skew();
+        -webkit-transform: skew();
+        -moz-transform: skew();
+        -ms-transform: skew();
+        -o-transform: skew();
+}
 }
 
 
