@@ -216,8 +216,28 @@ li:hover a{
 /* patner */
 .patner_container{
     background: linear-gradient(180deg, #106F98 0%, #FF8080 100%);
-
 }
+
+
+/* join */
+.media_join a{
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+
+    cursor: pointer;
+}
+
+.media_join a:hover{ 
+    transform: rotateY(380deg);
+    -webkit-transform: rotateY(380deg);
+    -moz-transform: rotateY(380deg);
+    -ms-transform: rotateY(380deg);
+    -o-transform: rotateY(380deg);
+}
+
 
 /* media queries */
 @media screen and (max-width:1023px) {
@@ -287,6 +307,10 @@ li:hover a{
     
     .extra_bold_stroke{
         -webkit-text-stroke: 1.8px black;
+    }
+
+    .bold_shcdow{
+        text-shadow: 0px 1vw 0px  #000000;
     }
 
     

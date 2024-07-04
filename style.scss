@@ -85,3 +85,23 @@ li:hover a{
     background-color: black;
     z-index: 1;
 }
+
+
+.media_join a{
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+
+    cursor: pointer;
+}
+
+.media_join a:hover{
+    rotate: 180deg;
+    transform: rotateX('100deg');
+    -webkit-transform: rotateX('100deg');
+    -moz-transform: rotateX('100deg');
+    -ms-transform: rotateX('100deg');
+    -o-transform: rotateX('100deg');
+}
