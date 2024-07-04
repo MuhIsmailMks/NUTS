@@ -159,6 +159,46 @@ li:hover a{
     text-shadow: 0px 1vw 0px  #000000;
 }
 
+
+/* memes */
+.memes_animation{
+    animation: memes_animation 20s linear infinite; 
+    width:calc(25vw * 5);
+}
+
+.memes_container.reverse_animation .memes_animation{ 
+    animation-direction: alternate-reverse;
+}
+
+.memes_animation .slide{
+    perspective:100px;
+    padding:15px;
+    cursor: pointer;
+}
+
+.memes_container:hover .memes_animation{
+    animation-play-state: paused; 
+}
+
+.memes_container .memes_animation img{
+    transition:.3s ease-in;
+}
+
+.memes_container .memes_animation img:hover{
+    transform: scale(1.1);
+}
+
+
+@keyframes memes_animation {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(calc(-25vw* 5))
+    }
+}
+ 
+
 /* media queries */
 @media screen and (max-width:1023px) {
     .medium_stroke{
@@ -197,6 +237,24 @@ li:hover a{
     }
 
 }
+
+@media (max-width: 768px){
+    .memes_animation{
+        animation: memes_animation 10s linear infinite; 
+    
+        width:calc(50vw * 5);
+    }
+     
+    @keyframes memes_animation {
+        from {
+            transform: translate(0%);
+        }
+        to {
+            transform: translate(calc(-50vw* 5))
+        }
+    }
+}
+
 
 @media screen and (max-width:600px) {
     .medium_stroke{
