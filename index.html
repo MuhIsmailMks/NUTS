@@ -100,19 +100,10 @@
              </div>
  
              <!-- content -->
-              <div class="content absolute left-0 top-0 z-10 w-full h-full flex justify-center items-center">
- 
-                 <!-- contract -->
-                  <div class="contract absolute md:left-[5%] top-[15%] md:top-[20%] flex flex-col max-[768px]:items-center gap-[.5rem] md:gap-[1.25rem] copy_btns">
-                     <h2 class="text-[24px]  min-[1800px]:text-[28px] medium_stroke">BSC20 Contract</h2>
-                     <div class="flex items-center gap-[1rem]">
-                         <h3 class="text-[20px] min-[1800px]:text-[23px] medium_stroke contract_address">0x55...14e69</h3>
-                         <img src="./assets/images/copy_icon.png" alt="" class="object-contain h-auto w-[30px]  min-[1800px]:w-[40px] cursor-pointer copy_btn ">
-                     </div>
-                  </div>
+              <div class="content absolute left-0 top-0 z-10 w-full h-full flex justify-center items-start lg:items-center">
  
                   <!-- title -->
-                   <div class="title flex justify-between items-center flex-col gap-[-2rem] absolute top-[25%] max-w-[90%] max-[1023px]:pt-[3rem]">
+                   <div class="title flex justify-between items-center flex-col gap-[-2rem] absolute top-[25%] max-w-[90%] ">
                      
                      <!-- images nutz -->
                       <div class="flex relative w-full justify-center gap-[-1rem] items-center ">
@@ -140,10 +131,28 @@
                          <img src="./assets/images/character/Nutz_d.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -2s;">
                       </div>
 
+                         <!-- contract -->
+                  <div class="contract min-[1023px]:hidden relative md:left-[5%] top-[15%] md:top-[20%] flex flex-col max-[768px]:items-center gap-[.5rem] md:gap-[1.25rem] copy_btns mb-[1rem]">
+                    <h2 class="text-[24px]  min-[1800px]:text-[28px] medium_stroke">BSC20 Contract</h2>
+                    <div class="flex items-center gap-[1rem]">
+                        <h3 class="text-[20px] min-[1800px]:text-[23px] medium_stroke contract_address">0x55...14e69</h3>
+                        <img src="./assets/images/copy_icon.png" alt="" class="object-contain h-auto w-[30px]  min-[1800px]:w-[40px] cursor-pointer copy_btn ">
+                    </div>
+                 </div>
+
                      <!-- about title -->
-                     <h2 class="medium_stroke w-[90%] md:w-[450px] text-center text-[20px]  min-[1800px]:text-[24px]">HI, IM NUTZ PAD, THE CUTEST NUTS ON 
+                     <h2 class="medium_stroke w-[90%] md:w-[450px] text-center text-[20px]  min-[1800px]:text-[24px] ">HI, IM NUTZ PAD, THE CUTEST NUTS ON 
                          THE CRYPTO SPACE.</h2>
                    </div>
+
+                    <!-- contract -->
+                  <div class="contract max-[1023px]:hidden absolute md:left-[5%] top-[15%] md:top-[20%] flex flex-col max-[768px]:items-center gap-[.5rem] md:gap-[1.25rem] copy_btns">
+                    <h2 class="text-[24px]  min-[1800px]:text-[28px] medium_stroke">BSC20 Contract</h2>
+                    <div class="flex items-center gap-[1rem]">
+                        <h3 class="text-[20px] min-[1800px]:text-[23px] medium_stroke contract_address">0x55...14e69</h3>
+                        <img src="./assets/images/copy_icon.png" alt="" class="object-contain h-auto w-[30px]  min-[1800px]:w-[40px] cursor-pointer copy_btn ">
+                    </div>
+                 </div>
  
                  <!-- progress container -->
                  <div class="progress flex justify-between items-center md:items-end flex-col gap-[1rem] absolute bottom-[5%] md:bottom-[20%] md:right-[10%] "> 
@@ -212,10 +221,10 @@
  
              <!-- content -->  
               <!-- images -->
-               <div class="title_about w-auto relative flex justify-center items-center text-[6vw] xl:text-[63.64px] min-[1800px]:text-[3vw] bold_stroke gap-[1rem] ml-[10vw]">
-                <h1 class="text-white mr-[.5rem]">about</h1>
+               <div class="title_about w-auto relative flex justify-center items-center text-[7vw] xl:text-[63.64px] min-[1800px]:text-[3vw] bold_stroke gap-[.4rem] lg:gap-[1rem] ml-[10vw]">
+                <h1 class="text-white lg:mr-[.5rem]">about</h1>
                 <h1 class="text-[#FF8080]">NUTZ</h1>
-                <img src="./assets/images/about_image.png" alt="" class="object-contain h-[50px] xl:h-[100px] w-auto relative max-w-[90%]">
+                <img src="./assets/images/about_image.png" alt="" class="object-contain h-[40px] md:h-[55px] xl:h-[100px] w-auto relative max-w-[90%]">
                </div>
                
               <!-- text -->
@@ -297,7 +306,10 @@
                  <div class="flex justify-between items-center flex-wrap w-full bg-[#3B674E] h-[160px] md:h-[100px]   px-[1rem]">
                     
                     <!-- logo -->
-                    <img src="./assets/images/browser_title.png" alt="" class="object-contain h-[30px] md:h-[40px] xl:h-[50px] w-auto">
+                    <div class="flex justify-center items-center">
+                        <p class="text-[#FF8080] medium_stroke text-[25px] lg:text-[34px]">Nutz</p>
+                        <img src="./assets/images/about_image.png" alt="" class="object-contain h-[30px] md:h-[55px] xl:h-[50px] w-auto relative max-w-[90%]">
+                    </div>
 
                     <!-- contract desktop -->
                      <div class=" w-[60%] hidden xl:w-[740px] h-[52px] bg-white rounded-[20px] px-[.65rem] md:flex justify-between items-center copy_btns">
@@ -728,7 +740,7 @@
                         <span
                         class="w-[7px] h-[7px] bg-black rounded-full mt-[.35rem]"
                         ></span>
-                        <p class="w-[90%]">
+                        <p class="w-[92%]">
                         Calls, Community Engagement, Viral Marketing
                         </p>
                     </div>
@@ -1160,8 +1172,8 @@
             
 
         <!-- Listing -->
-        <section class=" listing_container flex justify-center flex-col gap-[6rem] xl:gap-[7rem] h-auto items-center xl:h-[788px] w-full relative py-[5rem] lg:py-[3rem]">
-                <h2 class="text-[10vw] xl:text-[96px] bold_stroke bold_shcdow"><span class="text-[#FF8080]">CEX</span> LIStiNG</h2>
+        <section class=" listing_container flex justify-center flex-col gap-[6rem] xl:gap-[7rem] h-auto items-center xl:h-[788px] w-full relative max-[1023px]:pb-[3rem] lg:py-[3rem]">
+                <h2 class="text-[10vw] xl:text-[96px] bold_stroke bold_shcdow"><span class="text-[#FF8080]">CEX</span> LIStiNGs</h2>
 
                 <div class="flex relative items-center justify-center w-[327px] max-w-[90%] lg:w-[1009px] h-[352px] border-[#30324F] border-[6px] rounded-[50px] bg-white">
                     
@@ -1210,7 +1222,7 @@
                     <img src="./assets/images/crypto/partner/Logo-6.png" alt="logo" class="object-contain h-auto w-[78px] lg:w-[9%] absolute lg:relative  max-[1023px]:left-[49%]">
                     <img src="./assets/images/crypto/partner/Logo-7.png" alt="logo" class="object-contain h-auto w-[78px] lg:w-[9%] absolute lg:relative  max-[1023px]:left-[66%]">
 
-                    <img src="./assets/images/crypto/partner/Logo-8.png" alt="logo" class="object-contain h-auto w-[78px] lg:w-[9%] absolute lg:relative max-[1023px]:bottom-[18%] max-[1023px]:left-[22%]">
+                    <img src="./assets/images/crypto/partner/Logo-8.png" alt="logo" class="object-contain h-auto w-[78px] lg:w-[9%] absolute lg:relative max-[1023px]:bottom-[18%] max-[1023px]:left-[19%]">
                     <img src="./assets/images/crypto/partner/Logo-9.png" alt="logo" class="object-contain h-auto w-[78px] lg:w-[9%] absolute lg:relative max-[1023px]:bottom-[18%]">
                     <img src="./assets/images/crypto/partner/Logo-10.png" alt="logo" class="object-contain h-auto w-[78px] lg:w-[9%] absolute lg:relative max-[1023px]:bottom-[18%] max-[1023px]:left-[58%]">
                 </div>
