@@ -113,8 +113,7 @@ li:hover a{
     text-shadow: 0px .6vw 0px  #000000;
 }
 
-/* tokenomics */
-
+/* tokenomics */ 
 .news_image::after{
     content: "";
     position: absolute;
@@ -148,6 +147,16 @@ li:hover a{
 /* dex */
 .dex_title{
     text-shadow: 0px .6vw 0px  #000000;
+}
+
+/* nutzmap */
+.nutzmap{
+    background: linear-gradient(180deg, #ABE6FF 0%, #1BBAFE 100%);
+}
+
+.nutzmap_title{
+    -webkit-text-stroke: .5vw black; 
+    text-shadow: 0px 1vw 0px  #000000;
 }
 
 /* media queries */
@@ -195,7 +204,7 @@ li:hover a{
     }
     
     .bold_stroke{
-        -webkit-text-stroke: 1.3px black;
+        -webkit-text-stroke: 1.5px black;
     }
     
     .extra_bold_stroke{
