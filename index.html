@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- logo -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/character/nutz_logo.png">
-  
-  <!-- gsap -->  
     
+    <!-- logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/character/nutz_logo.png">
+    
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- tailwind css -->  
   <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
@@ -122,7 +123,9 @@
                         />
                         </div>
                         <!-- title -->
-                         <img src="./assets/images/character/Nutz_n.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation ">
+                         <div class="relative ">
+                            <img src="./assets/images/character/Nutz_n.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation ">
+                        </div>
                          <img src="./assets/images/character/Nutz_u.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -1s;">
                          <img src="./assets/images/character/Nutz_t.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -4s;">
                          <img src="./assets/images/character/Nutz_z.png" alt="" class="object-contain h-[20vw] xl:h-[190px] min-[1800px]:h-[6vw] w-auto relative floating_animation " style="animation-delay: -5s;">
@@ -1387,6 +1390,8 @@
     <!-- lottie -->
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
      
+     <!-- aos js scroll animation -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- script -->
      <script src="./assets/js/index.js"></script>
 </body>

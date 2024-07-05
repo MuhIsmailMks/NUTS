@@ -6,6 +6,24 @@ flex justify-center items-center
  min-[1023px]:
  max-[1023px]:
 
+ 
+data-aos="zoom-in"
+data-aos="fade-left"
+data-aos="fade-right"
+data-aos="fade-up"
+
+data-aos="zoom-in"
+data-aos-duration="700"
+data-aos-delay="100"
+
+
+data-aos="fade-down"
+data-aos="fade-left"
+data-aos="fade-right"
+
+data-aos-duration="400"
+data-aos-delay="200"
+
 https://t.me/nutzpad
  https://x.com/nutzpad
  FF8080

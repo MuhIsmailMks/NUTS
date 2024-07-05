@@ -1,5 +1,7 @@
  
-
+// AOS.init({
+//     once: true
+//   })
 // gsap scroll animation
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -17,8 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     scrub: true
                 }
             });
-        },
-        "(min-width: 1024px)": function() {
+
             gsap.to(".nutzMap_image", {
                 yPercent: -120,
                 ease: "none",
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     scrub: 1
                 }
             });
-        }, 
+        },
         // Mobile
         "(max-width: 1023px)": function() {
             gsap.to(".hero_parallax", {
@@ -42,8 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     scrub: true
                 }
             });
-        },
-        "(max-width: 1024px)": function() {
+
             gsap.to(".nutzMap_image", {
                 yPercent: -80,
                 ease: "none",
@@ -54,11 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     scrub: 1
                 }
             });
-        }, 
+        }
     });
-
- 
 });
+
 // nav handler
 const menu_btn = document.querySelector('nav .menu');
 const links = document.querySelector('nav .links');
