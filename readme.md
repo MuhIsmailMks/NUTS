@@ -13,7 +13,7 @@ data-aos="fade-right"
 data-aos="fade-up"
 
 data-aos="zoom-in"
-data-aos-duration="700"
+data-aos-duration="600"
 data-aos-delay="100"
 
 

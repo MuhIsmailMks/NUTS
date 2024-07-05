@@ -1,7 +1,7 @@
  
-// AOS.init({
-//     once: true
-//   })
+AOS.init({
+    once: true
+  })
 // gsap scroll animation
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
