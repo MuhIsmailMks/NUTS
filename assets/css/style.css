@@ -492,7 +492,7 @@ li:hover a{
 
 
 .to_right_animation{
-    animation: to_right 3s ease-in-out infinite;
+    animation: to_right 5s ease-in-out infinite;
   } 
 
   @keyframes to_right {
