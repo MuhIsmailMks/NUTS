@@ -1,7 +1,8 @@
  
 AOS.init({
     once: true
-  })
+  });
+
 // gsap scroll animation
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ScrollTrigger.matchMedia({
         // Desktop
         "(min-width: 1024px)": function() {
+            // hero
             gsap.to(".hero_parallax", {
                 yPercent: 50,
                 ease: "none",
@@ -20,8 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
 
+            // map image
             gsap.to(".nutzMap_image", {
-                yPercent: -120,
+                yPercent: -100,
                 ease: "none",
                 scrollTrigger: {
                     trigger: ".nutzMap_image",
@@ -30,7 +33,33 @@ document.addEventListener("DOMContentLoaded", () => {
                     scrub: 1
                 }
             });
+
+            // left  
+            gsap.to(".parallax_left", {
+                xPercent: 14,  
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".parallax_left", 
+                    start: "top bottom",    
+                    end: "bottom top",    
+                    scrub: 1                    
+                }
+            });
+
+            // right  
+            gsap.to(".parallax_right", {
+                xPercent: -14,  
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".parallax_right", 
+                    start: "top bottom",    
+                    end: "bottom top",    
+                    scrub: 1                    
+                }
+            });
+
         },
+
         // Mobile
         "(max-width: 1023px)": function() {
             gsap.to(".hero_parallax", {
@@ -54,9 +83,35 @@ document.addEventListener("DOMContentLoaded", () => {
                     scrub: 1
                 }
             });
+
+
+             // left  
+             gsap.to(".parallax_left", {
+                xPercent: 5,  
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".parallax_left", 
+                    start: "top bottom",    
+                    end: "bottom top",    
+                    scrub: 1                    
+                }
+            });
+
+            // right  
+            gsap.to(".parallax_right", {
+                xPercent: -5,  
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".parallax_right", 
+                    start: "top bottom",    
+                    end: "bottom top",    
+                    scrub: 1                    
+                }
+            });
         }
     });
 });
+ 
 
 // nav handler
 const menu_btn = document.querySelector('nav .menu');

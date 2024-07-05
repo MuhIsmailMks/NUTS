@@ -12,9 +12,12 @@ data-aos="fade-left"
 data-aos="fade-right"
 data-aos="fade-up"
 
+data-aos="fade-left"
+
+data-aos="fade-up"
 data-aos="zoom-in"
 data-aos-duration="600"
-data-aos-delay="100"
+data-aos-delay="500"
 
 
 data-aos="fade-down"
