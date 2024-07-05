@@ -44,6 +44,11 @@ body{
     transform: scaleX(-1);
 }
 
+/* pop up */
+.pop-up{
+    -webkit-backdrop-filter: blur(62px);
+    backdrop-filter: blur(62px);
+}
 
 /* navbar */
 li a{

@@ -111,7 +111,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
- 
+
+// enter pop up
+const popUp = document.querySelector('.pop-up')
+const enterBtns = document.querySelectorAll('.enter')
+
+enterBtns.forEach(enter => {
+    enter.addEventListener('click', () => {
+        popUp.classList.add('hidden') 
+      })
+})
+
+
 
 // nav handler
 const menu_btn = document.querySelector('nav .menu');
