@@ -747,3 +747,34 @@ li:hover a{
     80% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+
+
+.main_right_link .coin_spin{    
+    -webkit-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite; 
+}
+
+.main_right_link .rotate_img {
+    transition: all .2s ease-in-out;
+}
+
+.main_right_link:hover .rotate_img {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: all .3s ease-in-out
+}
