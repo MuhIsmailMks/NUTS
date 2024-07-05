@@ -159,8 +159,6 @@ btnsCopy.forEach(copyBtn => {
             console.error('not copied in keyboard ', err);
         });
     });
-    
-    
 })
  
 
@@ -186,6 +184,29 @@ popUp_container.addEventListener('click', () =>{
     popUp_container.classList.remove('flex')
     popUp_container.classList.add('hidden')
 })
+
+// writing text
+let elements = document.querySelector('.writingAnimated');
+
+let typed = new Typed(elements, {
+    strings: [elements.dataset.typedStrings],
+    typeSpeed: 30,
+    backSpeed: 45,
+    cursorChar: '...', 
+    smartBackspace: false,
+    loop: true
+}); 
+// let elements = document.querySelectorAll('.writingAnimated');
+
+// elements.forEach(element => {
+//     let typed = new Typed(element, {
+//         strings: [element.dataset.typedStrings],
+//         typeSpeed: 50,
+//         smartBackspace: false,
+//         loop: true
+//     });
+// });
+
 
 
 // input sol

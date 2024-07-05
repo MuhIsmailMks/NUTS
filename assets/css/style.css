@@ -734,3 +734,16 @@ li:hover a{
       transform: scale(1);
     } 
 }
+
+.typed-cursor {
+    display: inline-block;
+    opacity: 1;
+    animation: blink 1s infinite;
+    font-size:1rem;  
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    80% { opacity: 0; }
+    100% { opacity: 1; }
+}
