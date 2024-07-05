@@ -707,3 +707,30 @@ li:hover a{
       transform: translateY(0%);
     }
 }
+
+.nutsmap_image_animation{
+    animation: nutzmap 4s ease-in-out infinite;
+  } 
+  @keyframes nutzmap {
+    0% {
+      transform: translateY(0%);
+    }
+    50% { 
+      transform: translateY(.95rem);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+}
+
+.scale_animation{
+    animation: scale_animation 14s ease-in-out infinite;
+  } 
+  @keyframes scale_animation {
+    0%,100% {
+      transform: scale(.9);
+    }
+    50% { 
+      transform: scale(1);
+    } 
+}
