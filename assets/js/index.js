@@ -207,6 +207,7 @@ let typed = new Typed(elements, {
     smartBackspace: false,
     loop: true
 }); 
+
 // let elements = document.querySelectorAll('.writingAnimated');
 
 // elements.forEach(element => {
@@ -293,3 +294,56 @@ function validateAndAdjust() {
 
 input.addEventListener('input', validateAndAdjust);
  
+
+
+// particle js
+document.addEventListener('DOMContentLoaded', function () {
+    var sections = document.querySelectorAll('.particle-section .particles-js');
+  
+    // Konfigurasi untuk Particle.js
+    var particleConfig = {
+      "particles": {
+        "number": { "value": 100, "density": { "enable": true, "value_area": 1500 } },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "star", "stroke": { "width": 0, "color": "#000000" } },
+        "opacity": { "value": 0.5, "random": false },
+        "size": { "value": 5, "random": true },
+        "line_linked": { "enable": false },
+        "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        },
+        "modes": {
+          "grab": { "distance": 400, "line_linked": { "opacity": 1 } },
+          "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+          "repulse": { "distance": 200, "duration": 0.4 },
+          "push": { "particles_nb": 4 },
+          "remove": { "particles_nb": 2 }
+        }
+      },
+      "retina_detect": true
+    };
+  
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          var particlesElement = entry.target;
+          if (!particlesElement.classList.contains('initialized')) {
+            particlesElement.classList.add('initialized');
+            particlesJS(particlesElement.id, particleConfig);
+          }
+        }
+      });
+    }, { threshold: [0.1] });
+  
+    sections.forEach((section, index) => {
+      section.id = `particles-js-${index}`;
+      observer.observe(section);
+    });
+  });
+  
