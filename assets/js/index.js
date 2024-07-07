@@ -5,10 +5,9 @@ AOS.init({
 
 
   // parallax effect 
-document.addEventListener('DOMContentLoaded', function() {
-    const hero_parallax = document.querySelector('.hero_parallax');
-    const text_parallax = document.querySelector('.text_parallax');
-     
+  document.addEventListener('DOMContentLoaded', function() {
+    const hero_parallax = document.querySelector('.hero_parallax'); 
+
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) { 
@@ -22,11 +21,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // Observe elemen parallax
     observer.observe(hero_parallax);
 
+    // Function to handle scroll and apply parallax effect
     function handleScroll() {
         const scrollY = window.scrollY;
-
-        hero_parallax.style.transform = `translateY(${scrollY * 0.5}px)`;
+        
+        // Check the viewport width
+        const mediaQuery = window.matchMedia('(max-width: 1000px)');
+        if (mediaQuery.matches) {
+            // Apply different transform for screens less than 1000px wide
+            hero_parallax.style.transform = `translateY(${scrollY * 0.2}px)`;
+        } else {
+            // Default transform for screens larger than 1000px
+            hero_parallax.style.transform = `translateY(${scrollY * 0.5}px)`;
+        }
     }
+
+    // Listen for changes in screen size and apply the appropriate scroll handler
+    window.addEventListener('resize', handleScroll);
+    handleScroll(); // Initial check
 });
 
 
