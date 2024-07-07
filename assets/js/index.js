@@ -3,6 +3,21 @@ AOS.init({
     once: true
   });
 
+
+  // script.js
+document.addEventListener('scroll', function() {
+    const hero_parallax = document.querySelector('.hero_parallax')
+    const navBar = document.querySelector('.navbar')
+    const all_parallax = document.querySelectorAll('.all_parallax')
+    const scrollY = window.scrollY;
+
+    hero_parallax.style.transform = `translateY(${scrollY * 0.5}px)`;
+    // all_parallax.forEach(all => {
+    //     all.style.transform = `translateY(${scrollY * -0.5}px)`;
+    // })
+});
+
+
 // gsap scroll animation
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -10,31 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ScrollTrigger.matchMedia({
         // Desktop
         "(min-width: 1024px)": function() {
-            // hero
-            gsap.to(".hero_parallax", {
-                yPercent: 50,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: ".hero_parallax",
-                    start: "top top",
-                    end: "bottom top",
-                    
-                    scrub: true
-                }
-            });
-
-            // about
-            // gsap.to(".about_parallax", {
-            //     yPercent: -60,
-            //     ease: "none",
-            //     scrollTrigger: {
-            //         trigger: ".about_parallax",
-            //         start: "top+=100px top",
-            //         end: "bottom top",
-            //         scrub: true
-            //     }
-            // });
-            
+         
 
             // map image
             gsap.to(".nutzMap_image", {
@@ -76,17 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Mobile
         "(max-width: 1023px)": function() {
-            gsap.to(".hero_parallax", {
-                yPercent: 20,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: ".hero_parallax",
-                    start: "top top",
-                    end: "bottom top",
-                    scrub: true
-                }
-            });
-
+           
             gsap.to(".nutzMap_image", {
                 yPercent: -80,
                 ease: "none",
