@@ -7,6 +7,8 @@
     <!-- logo -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/character/nutz_logo.png">
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <!-- aos animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- tailwind css -->  
@@ -170,7 +172,7 @@
          </nav>
 
          <!-- Hero  -->
-          <section id="home" class="hero_parallax hero h-auto w-full relative z-0">
+          <section id="home" class="hero_parallax hero h-auto w-full relative ">
 
              <!-- bg -->
              <img src="./assets/images/background/background_hero.svg" alt="" class="object-cover h-[1000px]  xl:h-auto w-full relative z-0  ">
@@ -190,7 +192,7 @@
              </div>
  
              <!-- content -->
-              <div class="content absolute left-0 top-0 z-10 w-full h-full flex justify-center items-start lg:items-center">
+              <div class="content absolute left-0 top-0 z-[999] w-full h-full flex justify-center items-start lg:items-center">
  
                   <!-- title -->
                    <div class="title flex justify-between items-center flex-col gap-[-2rem] absolute top-[15%] lg:top-[25%] max-w-[90%] ">
@@ -292,12 +294,12 @@
                  </div>
  
                  <!-- progress container -->
-                 <div class="progress flex justify-between items-center md:items-end flex-col gap-[1rem] absolute bottom-[10%] md:bottom-[20%] md:right-[10%] " data-aos="fade-left"
+                 <div class="progress   flex justify-between items-center md:items-end flex-col gap-[1rem] absolute bottom-[10%] md:bottom-[20%] md:right-[10%] z-[999]  " data-aos="fade-left"
                  data-aos-duration="600"
                  data-aos-delay="1900"> 
  
                      <!-- buy btn -->
-                     <button class="hero__btn w-[248px] h-[53px] relative bg-white border-[2px] border-black rounded-full flex justify-between items-center px-[.25rem] ">
+                     <button class="hero__btn w-[248px] h-[53px] relative bg-white border-[2px] border-black rounded-full flex justify-between items-center px-[.25rem] z-[999]">
  
                          <!-- BNB input -->
                          <div class="input_container flex items-center text-black ml-[1rem]">
@@ -337,7 +339,7 @@
 
 
           <!-- About -->
-          <section  id="About" class="about_parallax  h-[750px] md:h-[850px] xl:h-[50vw] w-full relative flex flex-col items-center lg:items-start  ">
+          <section  id="About" class="   h-[750px] md:h-[850px] xl:h-[50vw] w-full relative flex flex-col items-center lg:items-start  ">
              
             <div  class="w-full h-full relative flex flex-col items-center xl:items-start py-[3rem] pt-[20vw] md:pt-[2rem] xl:pt-[6vw]" >
                 
@@ -404,10 +406,10 @@
           </section> 
 
           <!-- Tokenomics -->
-          <section  id="Tokenomics" class=" tokenomics h-auto w-full relative bg-[#508955] py-[3rem] particle-section">
+          <section  id="Tokenomics" class="token_parallax tokenomics h-auto w-full relative bg-[#508955] py-[3rem] particle-section">
             <div class="particles-js absolute left-0 top-0 w-full h-full z-0" ></div>
             <!-- slider -->
-             <div class="slide_text_container w-full h-auto relative">
+             <div class="slide_text_container w-full h-auto relative z-10">
                 <div class="marquee_container relative w-full h-[10vw] min-[1800px]:h-[10vw] py-[1rem] md:py-[2rem] flex items-center">
                     <div class="marquee flex items-center w-auto absolute">
                         <p class="text-[6.2vw] w-[48vw] text-center">Tokenomics</p>
@@ -439,7 +441,7 @@
             
 
              <!-- browser -->
-              <div class="w-[93%] max-w-[1800px] relative h-auto xl:h-[1152px] bg-[#B7B7B7] mx-auto rounded-[30px] lg:rounded-[50px] flex justify-center items-center flex-col px-[1rem] lg:px-[2rem]  gap-[1rem] max-[1023px]:py-[2rem] my-[2rem]">
+              <div class="w-[93%] max-w-[1800px] relative h-auto xl:h-[1152px] bg-[#B7B7B7] mx-auto rounded-[30px] lg:rounded-[50px] flex justify-center items-center flex-col px-[1rem] lg:px-[2rem]  gap-[1rem] max-[1023px]:py-[2rem] my-[2rem] z-10">
             
               <!-- title browser -->
                <div class="flex relative justify-between items-center w-full">
@@ -654,7 +656,7 @@
             </div>
 
             <!-- social -->
-             <div class="w-full flex flex-col items-center relative h-auto my-[4rem]"> 
+             <div class="w-full flex flex-col items-center relative h-auto my-[4rem] z-10"> 
                 <div class="social_media relative flex justify-center xl:justify-between flex-wrap gap-[2rem] items-center w-full h-auto px-[1rem] xl:px-[3rem] max-w-[1900px]">
 
                     <div class="relative min-w-[140px] w-[33%] md:w-auto" data-aos="zoom-in"
@@ -715,7 +717,7 @@
              </div>
 
             <!-- slider -->   
-            <div class="slide_text_container w-full h-auto relative">
+            <div class="slide_text_container w-full h-auto relative z-10">
                     <div class="marquee_container relative w-full h-[10vw] min-[1800px]:h-[10vw] py-[1rem] md:py-[2rem] flex items-center">
                         <div class="marquee flex items-center w-auto absolute">
                             <p class="text-[6.2vw] w-[48vw] text-center">Tokenomics</p>
@@ -748,7 +750,7 @@
           </section> 
 
         <!-- Dex -->
-        <section class=" dex h-auto  w-full relative bg-[#FFC73F] py-[3rem] particle-section">
+        <section class="dex_parallax dex h-auto  w-full relative bg-[#FFC73F] py-[3rem] particle-section">
             <div class="particles-js absolute left-0 top-0 w-full h-full z-0" ></div>
                 <!-- title -->
                  <h1 class="dex_title text-center text-white extra_bold_stroke text-[13vw] xl:text-[5vw] mb-[2rem]"
@@ -830,9 +832,10 @@
             <div class="particles-js absolute left-0 top-0 w-full h-full z-0" ></div>
 
                 <!-- title -->
-                <h2 class="nutzmap_title text-[14vw] mb-[50vw]">Nutzmap</h2>
+                <h2 class="nutzmap_title text-[14vw] mb-[50vw] z-10">Nutzmap</h2>
+
                 <!-- image -->
-                <div class="image_container w-full h-[130vw] absolute z-10 nutsmap_image_animation flex justify-center ">
+                <div class="image_container w-full h-[130vw] absolute z-10 nutsmap_image_animation flex justify-center  ">
                     <img
                     src="./assets/images/background/nutzmap_image-min.png"
                     alt=""
@@ -842,7 +845,7 @@
 
                 <!-- maps -->
                 <div  id="Nutzmap"
-                class="maps_container w-[93%] max-w-[1400px] relative h-auto lg:h-[1300px] max-[1023px]:mt-[3rem] flex flex-col items-center max-[1023px]:gap-[90px]"  >
+                class="maps_container w-[93%] max-w-[1400px] relative h-auto lg:h-[1300px] max-[1023px]:mt-[3rem] flex flex-col items-center max-[1023px]:gap-[90px] z-10"  >
                 <!-- map1 -->
                 <div
                     class="map max-[500px]:w-[90%] w-[400px] lg:w-auto px-[1rem] py-[1.25rem] lg:py-[.75rem] flex flex-col items-center bg-white rounded-[30px] relative lg:absolute lg:left-0 lg:top-0 z-[1] parallax_right"
@@ -1145,7 +1148,7 @@
                 </div>
 
                 <!-- memes -->
-                <section  id="Gallery" class="w-full  h-auto relative flex flex-col my-[3rem]"  >
+                <section  id="Gallery" class="w-full  h-auto relative flex flex-col my-[3rem] z-10"  >
 
                 <!-- row 1 -->
                 <div class="memes_container w-full relative h-[50vw] md:h-[25vw] xl:h-[25vw] min-[2500px]:h-[30vw] grid place-items-center overflow-hidden"  >
@@ -1360,11 +1363,11 @@
         <section class=" listing_container flex justify-center flex-col gap-[6rem] xl:gap-[7rem] h-auto items-center xl:h-[788px] w-full relative max-[1023px]:pb-[3rem] lg:py-[3rem] particle-section">
             <div class="particles-js absolute left-0 top-0 w-full h-full z-0" ></div>
 
-                <h2 class="text-[10vw] xl:text-[96px] bold_stroke bold_shcdow" data-aos="fade-up"
+                <h2 class="text-[10vw] xl:text-[96px] bold_stroke bold_shcdow z-10" data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay="200"><span class="text-[#FF8080]">CEX</span> LIStiNGs</h2>
 
-                <div class="listing_images flex relative items-center justify-center w-[327px] max-w-[90%] lg:w-[1009px] h-[352px] border-[#30324F] border-[6px] rounded-[50px] bg-[#FF8080]">
+                <div class="listing_images z-10 flex relative items-center justify-center w-[327px] max-w-[90%] lg:w-[1009px] h-[352px] border-[#30324F] border-[6px] rounded-[50px] bg-[#FF8080]">
                     
                     <!-- cex -->
                     <img src="./assets/images/crypto/listing/logo.png" alt="" class="object-contain h-auto w-[68px] lg:w-[96px] absolute listing_image   left-[13%] lg:left-[10%] max-[1023px]:top-[18%] z-[1]" data-aos="zoom-in"
@@ -1431,12 +1434,13 @@
         <!-- Partnership -->
          <section id="Partnership" class=" patner_container w-full h-auto py-[4rem] flex flex-col items-center gap-[3rem] particle-section">
             <div class="particles-js absolute left-0 top-0 w-full h-full z-0" ></div>
-            <h2 class="text-[10vw] xl:text-[96px] bold_stroke bold_shcdow" data-aos="fade-up"
+
+            <h2 class="text-[10vw] xl:text-[96px] bold_stroke bold_shcdow z-10" data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="300"><span class="text-[#FF8080]" >PARTNER</span>SHIP</h2>
 
             <!-- patner -->
-             <div class="flex justify-center items-center flex-wrap relative  overflow-hidden lg:bg-[#8CC0B9] rounded-[56px] border-[2px] lg:border-[6px] border-[#30324F] w-[327px] max-w-[90%] lg:w-[1300px] h-[376px]">
+             <div class="flex justify-center items-center flex-wrap relative  overflow-hidden lg:bg-[#8CC0B9] rounded-[56px] border-[2px] lg:border-[6px] border-[#30324F] w-[327px] max-w-[90%] lg:w-[1300px] h-[376px] z-10">
 
                 <div class="flex lg:relative justify-center items-center  bg-[#FF8080] overflow-hidden rounded-[46px] border-[6px] border-[#30324F] w-full lg:w-[96%] h-full lg:h-[90%] lg:gap-[.4rem]">
                     <img src="./assets/images/crypto/partner/Logo.png" alt="logo" class="object-contain h-auto w-[78px] lg:w-[8.5%] absolute lg:relative max-[1023px]:top-[18%] max-[1023px]:left-[13%] z-10 " data-aos="zoom-in"
@@ -1491,17 +1495,17 @@
           <section class="w-full h-auto relative bg-[#FF8080] flex flex-col max-[1023px]:gap-[210px] items-center pt-[2rem] pb-[2rem] particle-section">
             <div class="particles-js absolute left-0 top-0 w-full h-full z-0" ></div>
             <!-- title -->
-            <h2 class="relative text-[15vw] sm:text-[69px] lg:text-[80px] w-full text-center bold_shcdow extra_bold_stroke " data-aos="fade-up"
+            <h2 class="relative text-[15vw] sm:text-[69px] lg:text-[80px] w-full text-center bold_shcdow extra_bold_stroke z-10" data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="500">JOIN us</h2>
 
             <!-- social media -->
              <!-- get -->
-             <div class="absolute  w-auto  top-[140px] lg:top-[190px] z-10" data-aos="zoom-in"
+             <div class="absolute cursor-pointer w-auto  top-[140px] lg:top-[190px] z-10 " data-aos="zoom-in"
              data-aos-duration="600"
              data-aos-delay="300"
              >
-                <img src="./assets/images/get_now.svg" alt="" class="object-contain h-[40px] sm:h-[60px] lg:h-[70px] w-auto    duration-150 hover:scale-110 cursor-pointer">
+                <img src="./assets/images/get_now.svg" alt="" class="object-contain h-[40px] sm:h-[60px] lg:h-[70px] w-auto  duration-150 hover:scale-110 cursor-pointer">
              </div>
 
              <!-- left -->
@@ -1514,7 +1518,7 @@
                         <img src="./assets/images/twitter_join.svg" alt="twitter" class="object-contain h-[43px] sm:h-[70px] lg:h-[97.12px] w-auto relative rotate-[-7deg]">
                     </div>
                 </a>
-                <a href="https://t.me/nutzpad" target="_blank" class="relative"  >
+                <a href="https://t.me/nutzpad" target="_blank" class="relative cursor-pointer z-10"  >
                     <span class="w-full h-full absolute z-10 left-0 top-0"></span>
                     <div class="relative" data-aos="zoom-in"
                     data-aos-duration="600"
@@ -1525,7 +1529,7 @@
               </div>
 
              <!-- right -->
-             <div class="absolute media_join right-0 top-[240px] lg:top-0 w-[42vw] lg:w-[33vw] h-[110px] sm:h-[210px] lg:h-[400px]   z-[10] flex justify-between flex-col items-start">
+             <div class="absolute media_join right-0 top-[240px] lg:top-0 w-[42vw] lg:w-[33vw] h-[110px] sm:h-[210px] lg:h-[400px]  z-[10] flex justify-between flex-col items-start">
                 <a href="https://www.dextools.io/app/en/pairs" target="_blank" class="relative">
                     <span class="w-full h-full absolute z-10 left-0 top-0"></span>
                     <div class="relative" data-aos="zoom-in"
@@ -1545,7 +1549,7 @@
             </div>
 
             <!-- image -->
-            <div class="relative w-full h-auto flex justify-center" data-aos="zoom-in"
+            <div class="relative w-full h-auto flex justify-center z-[7]" data-aos="zoom-in"
             data-aos-duration="600"
             data-aos-delay="500"> 
                 <dotlottie-player src="https://lottie.host/acb3a802-7d87-4492-ac35-9592473fe445/7mA5rJg64h.json" background="transparent" speed="1" class=" h-auto w-[90%] relative mt-[100px] " loop autoplay></dotlottie-player>
@@ -1558,7 +1562,7 @@
            <section class="get_nuts w-full h-auto flex flex-col items-center justify-center relative px-[2rem] pb-[53vw] particle-section">
             <div class="particles-js absolute left-0 top-0 w-full h-full z-0" ></div>
             
-            <div class="w-full h-auto flex flex-col items-center lg:items-start relative  sm:px-[2rem] max-w-[2000px]">
+            <div class="w-full h-auto flex flex-col items-center lg:items-start relative  sm:px-[2rem] max-w-[2000px] z-10">
                   <!-- title -->
                   <h2 class="relative z-10 text-left extra_bold_stroke bold_shcdow text-[40px] xl:text-[64px] min-[2000px]:text-[4vw]" data-aos="fade-up"
                   data-aos-duration="600"
@@ -1592,14 +1596,15 @@
                 </div>
 
                  <!-- image -->
-                 <img src="./assets/images/background/get_nuts.png" alt="" class="object-contain h-auto w-[94%] absolute bottom-0 scale_animation">
+                 <img src="./assets/images/background/get_nuts.png" alt="" class="object-contain h-auto w-[94%] absolute bottom-0 scale_animation z-10">
 
            </section>
 
            <!-- footer -->
            <footer id="Contacts" class="w-full h-auto relative  bg-[#FCC680] flex justify-center particle-section">
             <div class="particles-js absolute left-0 top-0 w-full h-full z-0" ></div>
-             <div class="footer_container w-full h-auto relative max-w-[2000px] flex flex-col items-center gap-[3rem]">
+
+             <div class="footer_container w-full h-auto relative max-w-[2000px] flex flex-col items-center gap-[3rem] z-10">
 
                 <!-- top -->
               <div class="flex items-center h-auto max-[1023px]:flex-col-reverse w-full relative  min-[1800px]:justify-center">
@@ -1665,12 +1670,14 @@
                     </a>
                 </div>
 
+              <div class="relative flex justify-center items-center"   data-aos="fade-left"
+              data-aos-duration="400"
+              data-aos-delay="200">
                 <div class="flex justify-center items-center relative w-[246px] h-[66px] border-[4px] border-black rounded-[20px] cursor-pointer duration-150 hover:scale-110 " 
-                data-aos="fade-left"
-                data-aos-duration="400"
-                data-aos-delay="200">
+              >
                     <p class="bold_stroke text-[32px]">Buy $NUTZ</p>
                 </div>
+              </div>
 
                </div>
 

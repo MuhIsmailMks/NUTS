@@ -18,9 +18,23 @@ document.addEventListener("DOMContentLoaded", () => {
                     trigger: ".hero_parallax",
                     start: "top top",
                     end: "bottom top",
+                    
                     scrub: true
                 }
             });
+
+            // about
+            // gsap.to(".about_parallax", {
+            //     yPercent: -60,
+            //     ease: "none",
+            //     scrollTrigger: {
+            //         trigger: ".about_parallax",
+            //         start: "top+=100px top",
+            //         end: "bottom top",
+            //         scrub: true
+            //     }
+            // });
+            
 
             // map image
             gsap.to(".nutzMap_image", {
@@ -207,18 +221,7 @@ let typed = new Typed(elements, {
     smartBackspace: false,
     loop: true
 }); 
-
-// let elements = document.querySelectorAll('.writingAnimated');
-
-// elements.forEach(element => {
-//     let typed = new Typed(element, {
-//         strings: [element.dataset.typedStrings],
-//         typeSpeed: 50,
-//         smartBackspace: false,
-//         loop: true
-//     });
-// });
-
+ 
 
 
 // input sol
@@ -347,3 +350,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+
+
+
+  let tl = gsap.timeline();
