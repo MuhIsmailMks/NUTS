@@ -4,18 +4,32 @@ AOS.init({
   });
 
 
-  // script.js
-document.addEventListener('scroll', function() {
-    const hero_parallax = document.querySelector('.hero_parallax')
-    const navBar = document.querySelector('.navbar')
-    const all_parallax = document.querySelectorAll('.all_parallax')
-    const scrollY = window.scrollY;
+  // parallax effect 
+document.addEventListener('DOMContentLoaded', function() {
+    const hero_parallax = document.querySelector('.hero_parallax');
+    const text_parallax = document.querySelector('.text_parallax');
+     
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) { 
+                window.addEventListener('scroll', handleScroll);
+            } else { 
+                window.removeEventListener('scroll', handleScroll);
+            }
+        });
+    });
 
-    hero_parallax.style.transform = `translateY(${scrollY * 0.5}px)`;
-    // all_parallax.forEach(all => {
-    //     all.style.transform = `translateY(${scrollY * -0.5}px)`;
-    // })
+    // Observe elemen parallax
+    observer.observe(hero_parallax);
+
+    function handleScroll() {
+        const scrollY = window.scrollY;
+
+        hero_parallax.style.transform = `translateY(${scrollY * 0.5}px)`;
+    }
 });
+
+
 
 
 // gsap scroll animation
