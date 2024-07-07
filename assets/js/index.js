@@ -20,18 +20,15 @@ AOS.init({
 
     // Observe elemen parallax
     observer.observe(hero_parallax);
-
-    // Function to handle scroll and apply parallax effect
+ 
     function handleScroll() {
         const scrollY = window.scrollY;
         
         // Check the viewport width
         const mediaQuery = window.matchMedia('(max-width: 1000px)');
-        if (mediaQuery.matches) {
-            // Apply different transform for screens less than 1000px wide
+        if (mediaQuery.matches) { 
             hero_parallax.style.transform = `translateY(${scrollY * 0.2}px)`;
-        } else {
-            // Default transform for screens larger than 1000px
+        } else { 
             hero_parallax.style.transform = `translateY(${scrollY * 0.5}px)`;
         }
     }

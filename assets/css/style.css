@@ -785,3 +785,12 @@ li:hover a{
 }
 
  
+
+.goog-te-gadget-simple{
+    display:flex !important;
+    flex-direction: row;
+}
+
+.goog-te-gadget-simple span a{
+    display:flex;
+}
