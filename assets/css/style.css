@@ -786,6 +786,11 @@ li:hover a{
 
  
 
+/* translate */
+.skiptranslate{
+    max-width: 100%;
+}
+
 .goog-te-gadget-simple{
     display:flex !important;
     flex-direction: row;
