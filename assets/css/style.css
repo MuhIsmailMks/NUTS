@@ -786,10 +786,14 @@ li:hover a{
 
  
 
-/* translate */
-.skiptranslate{
-    max-width: 100%;
+/* translate */  
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+    opacity: 0;
+    z-index: -9999;
+    display:none;
+    background:red;
 }
+
 
 .goog-te-gadget-simple{
     display:flex !important;
