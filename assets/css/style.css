@@ -793,4 +793,5 @@ li:hover a{
 
 .goog-te-gadget-simple span a{
     display:flex;
+    font-family: 'bardy', cursive; 
 }
