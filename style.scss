@@ -7,6 +7,10 @@
     flex-direction: row;
 }
 
+.goog-te-gadget-simple span a:nth-child(5){
+    background-color: blue;
+}
+
 @media screen and (max-width:1024px) {
     .medium_stroke{
         -webkit-text-stroke: 1.3px black;
