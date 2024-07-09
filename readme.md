@@ -44,9 +44,16 @@ https://t.me/nutzpad
 
 
 hidden
-
-
-
+0x00...dead
+0X0000000....DEAD
+0X0000000....DEAD
+0xea...Dc755
+0x55...14e69
+0xea...Dc75
+60EfC2ceA4fd1db5f0357572C359Dc755
+0xea50F7060EfC2ceA4fd1db5f0357572C359Dc755
+0xea50F7060EfC2ceA4fd1db5f0357572C359Dc755
+0xea50F7060EfC2ceA4fd1db5f0357572C359Dc755
 ?????
  max-[1023px]:bottom-[18%] max-[1023px]:left-[13%]
  max-[1023px]:top-[18%] max-[1023px]:left-[31%]
