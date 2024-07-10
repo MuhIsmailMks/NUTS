@@ -177,7 +177,7 @@ btnsCopy.forEach(copyBtn => {
     let timeout;
 
     btn.addEventListener('click', function () { 
-        navigator.clipboard.writeText('0xea50F7060EfC2ceA4fd1db5f0357572C359Dc755').then(function() { 
+        navigator.clipboard.writeText('0x253855BE0319c6941626DDE3c24ba717e570aE3B').then(function() { 
             text.innerText = 'Copied';
      
             clearTimeout(timeout);
