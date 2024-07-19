@@ -197,6 +197,10 @@ const popUp_container = document.querySelector('.popUp_container');
 const image_popUp_container = document.querySelector('.popUp_container .image_popUp');
 
 
+popUp_container.addEventListener('click', () =>{
+    popUp_container.classList.remove('flex')
+    popUp_container.classList.add('hidden')
+})
 news_images.forEach(news_image => {
    news_image.addEventListener('click', () => {
     const img = news_image.querySelector('img').src;
@@ -209,10 +213,6 @@ news_images.forEach(news_image => {
    })
 })
 
-popUp_container.addEventListener('click', () =>{
-    popUp_container.classList.remove('flex')
-    popUp_container.classList.add('hidden')
-})
 
 // writing text
 let elements = document.querySelector('.writingAnimated');
